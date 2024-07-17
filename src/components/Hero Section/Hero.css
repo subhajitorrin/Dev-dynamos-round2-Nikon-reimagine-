@@ -1,0 +1,242 @@
+.heading {
+    font-family: "Montserrat", sans-serif;
+}
+
+.swiper {
+    width: 81%;
+    height: 100%;
+    z-index: 2;
+}
+.circle, .circle-inner {
+    border-radius: 50%;
+    transform: rotateY(0deg);
+    position: relative;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%, black 0deg, #8F33B1 360deg);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 6px;
+
+}
+.circle-inner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background: conic-gradient(from 70deg at 40% 60%, #8F33B1 0deg, black 360deg);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    padding: 6px;
+}
+.circle {
+    padding: 4px; 
+}
+
+.circle-inner {
+    background-color: #00040c; /* This should match your background color */
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    z-index: 2;
+}
+
+.custom-swiper-button-prev,
+.custom-swiper-button-next {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.custom-swiper-button-prev {
+    left: 20%;
+}
+
+.custom-swiper-button-next {
+    top: 16%;
+    left: 22%;
+}
+
+.custom-swiper-button-prev::after,
+.custom-swiper-button-next::after {
+    content: '';
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+}
+
+.custom-swiper-button-prev::after {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+
+.custom-swiper-button-next::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.links a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info {
+    border-left: 6px solid #8F33B1;
+    width: 20rem;
+}
+
+.camera-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translateX(0px);
+    animation: floating 3s ease-in-out infinite;
+}
+
+.camera-img {
+    transform: rotate(30deg);
+}
+.tags{
+    color: #8F33B1;
+    transition: all 0.7s ease-out;
+}
+.tags:hover{
+    transform: scale(2);
+    color: #e2dfe3;
+}
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .hero-upper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .swiper {
+        width: 80%;
+    }
+
+    .camera-img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .hero-footer {
+        flex-direction: column;
+        gap: 2rem;
+        top: 5rem;
+    }
+
+    .price-infor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        width: 100%;
+        text-align: center;
+        border-left: none;
+        border-top: 6px solid #8F33B1;
+        padding-top: 1rem;
+    }
+
+    .scroll-down {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-swiper-button-prev,
+    .custom-swiper-button-next {
+        top: auto;
+        bottom: 10%;
+        transform: none;
+    }
+
+    .custom-swiper-button-prev {
+        left: 30%;
+    }
+
+    .custom-swiper-button-next {
+        right: 30%;
+        left: auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero-footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .price-infor .price h1 {
+        font-size: 2rem;
+    }
+
+    .price-infor .info h3 {
+        font-size: 1rem;
+    }
+
+    .price-infor .info p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 864px) {
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+}

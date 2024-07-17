@@ -1,0 +1,9 @@
+.gradiant-feature{
+    background: linear-gradient(#67419e,#a83186);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.feu > div{
+    font-size: 25px;
+    font-weight: 600;
+}
