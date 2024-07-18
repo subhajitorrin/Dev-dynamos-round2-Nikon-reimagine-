@@ -1,7 +1,7 @@
 import React from 'react';
 import './CardStyle.css';
 
-const Card = () => {
+const Card = ({src,name,price,secPrice,rating}) => {
     return (
         <div className="card">
             <div className="content">
@@ -11,21 +11,25 @@ const Card = () => {
                             {/* SVG path data */}
                         </svg>
                         <div className="img">
-                            <div className="circle"></div>
-                            <div className="circle" id="right"></div>
-                            <div className="circle" id="bottom"></div>
+                            <div className="product-circle"></div>
+                            <div className="product-circle" id="right"></div>
+                            <div className="product-circle" id="bottom"></div>
                         </div>
                         <strong className='absolute'>Hover Me</strong>
                     </div>
                 </div>
                 <div className="front">
-                    <div className="img">
-
+                    <div className="img pl-[3rem] pr-[3rem] object-contain relative h-[60%]">
+                        <img src={src} alt="cmaera img" width={"100%"} height={"100%"}/>
                     </div>
-                    <div className="front-content">
-                        <small className="badge">NIKON</small>
-                        <div className="">
-                            
+                    <div className="front-content relative">
+                        <div className="w-full pl-[2rem] pr-[2rem]">
+                            <h1 className='font-[800]'>{name}</h1>
+                            <p>$499.00</p>
+                            <div className='w-full flex flex-col gap-[10px] items-center justify-center mt-[1rem]'>
+                                <button className='btn'>Add To Cart</button>
+                                <button className='btn'>Buy</button>
+                            </div>
                         </div>
                     </div>
                 </div>
