@@ -3,7 +3,8 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Img from "../../assets/1.png"
 import gsap from 'gsap';
-import '../Features/Features.css'
+import '../Features/Features.css';
+import { GradientLight } from '../GradientLight';
 
 
 import './Hero.css'
