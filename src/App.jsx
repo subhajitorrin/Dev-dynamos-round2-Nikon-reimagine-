@@ -7,6 +7,7 @@ import ScrollingCanvus2 from "./components/Scrolling-Canvus2/ScrollingCanvus2";
 import ScrollingCanvus3 from "./components/Scrolling-Canvus3/ScrollingCanvus3";
 import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
+import InstagramSection from "./components/InstagramSection/InstagramSection";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <Product />
         <ScrollingCanvus2 />
         <Myswipper />
+        <InstagramSection/>
         <ScrollingCanvus3 />
       </div>
     </>
