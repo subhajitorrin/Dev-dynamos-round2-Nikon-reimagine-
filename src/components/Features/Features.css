@@ -7,3 +7,53 @@
     font-size: 25px;
     font-weight: 600;
 }
+.InfiniteTrust{
+    position: relative;
+    flex-shrink: 0;
+    display: inline-block;
+    animation: 10s infiniteTrust infinite linear;
+}
+.ParentInfinite{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.ParentInfinite::before{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:150px;
+    height:100%;
+    background-color: white;
+    z-index: 7;
+    content: "";
+    background:linear-gradient(to left,rgba(255,255,255,0),#010413);
+}
+.ParentInfinite::after{
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:50px;
+    height:100%;
+    background-color: white;
+    z-index: 7;
+    content: "";
+    background:linear-gradient(to right,rgba(255,255,255,0),#010413);
+}
+
+
+/* .ParentInfinite:hover .InfiniteTrust{
+    animation-play-state: paused;
+} */
+@keyframes infiniteTrust{
+    0%{
+        transform: translateX(0%);
+    }
+  100%{
+        transform: translateX(-100%);
+    }
+}

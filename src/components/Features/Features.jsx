@@ -10,7 +10,9 @@ import Trus2 from '../../assets/trusted2.png';
 import Trus3 from '../../assets/trusted3.png';
 import Trus4 from '../../assets/trusted4.png';
 import Trus5 from '../../assets/trusted5.png';
-
+import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/bundle";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -18,36 +20,36 @@ const Features = () => {
 
     const FeatureRef = useRef();
 
-    useEffect(() => {
-        let timeline = gsap.timeline({
-            scrollTrigger: {
-                trigger: FeatureRef.current,
-                start: '10% 25%',
-                end: '110% 25%',
-                scrub: 2,
-            },
-        });
-        timeline.from('.camera-features-container .feu',{
-            x:-10,
-            opacity:0,
-            scale:0,
-            duration:1
-        }).from('.trusted_by h1',{
-            opacity:0,
-            scale:0,
-            y:20,
-            duration:1,
-            delay:1,
-        }).from('.trusted_by div img',{
-            opacity:0,
-            duration:1,
-            scale:0,
-            y:20,
-            stagger:0.5,
-            delay:1,
-        })
+    // useEffect(() => {
+    //     let timeline = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: FeatureRef.current,
+    //             start: '10% 25%',
+    //             end: '110% 25%',
+    //             scrub: 2,
+    //         },
+    //     });
+    //     timeline.from('.camera-features-container .feu',{
+    //         x:-10,
+    //         opacity:0,
+    //         scale:0,
+    //         duration:1
+    //     }).from('.trusted_by h1',{
+    //         opacity:0,
+    //         scale:0,
+    //         y:20,
+    //         duration:1,
+    //         delay:1,
+    //     }).from('.trusted_by div img',{
+    //         opacity:0,
+    //         duration:1,
+    //         scale:0,
+    //         y:20,
+    //         stagger:0.5,
+    //         delay:1,
+    //     })
 
-    }, [])
+    // }, [])
 
 
 
@@ -92,14 +94,23 @@ const Features = () => {
                     <p>461g</p>
                 </div>
             </div>
-            <div className='trusted_by hidden md:flex md:flex-col'>
+            <div className='trusted_by hidden md:flex md:flex-col items-center'>
                 <h1 className='text-center text-4xl pb-[1rem] font-bold '>TRUSTED BY</h1>
-                <div className='flex items-center justify-around w-full '>
-                    <img src={Trus1} alt="" width={"150px"} height={"150px"}/>
-                    <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
-                    <img src={Trus3} alt="" width={"150px"} height={"150px"}/>
-                    <img src={Trus4} alt="" width={"150px"} height={"150px"}/>
-                    <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
+                <div className='ParentInfinite'>
+                    <div className='InfiniteTrust flex items-center justify-around w-full '>
+                        <img src={Trus1} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus3} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus4} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
+                    </div>
+                    <div className='InfiniteTrust flex items-center justify-around w-full  h-full'>
+                        <img src={Trus1} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus3} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus4} alt="" width={"150px"} height={"150px"}/>
+                        <img src={Trus5} alt="" width={"150px"} height={"150px"}/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -219,14 +219,14 @@
 .NewsDate{
   width: fit-content;
   height:fit-content;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   font-size: 1.2rem;
   font-weight: bolder;
   position: absolute;
   bottom:40px;
   left:20px;
   border-radius: 30px;
-  background-color: rgb(127, 255, 212);
+  background-color: rgb(255, 255, 255);
   text-align: center;
 }
 .SeeMoreNews{
