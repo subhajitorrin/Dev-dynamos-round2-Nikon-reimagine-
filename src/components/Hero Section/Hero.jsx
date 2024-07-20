@@ -85,7 +85,7 @@ const Hero = () => {
         }, 'a')
     }, [])
     return (
-        <div className='w-full h-[100vh] bg-[#00040c] relative text-white'>
+        <div className='w-full h-[100vh] bg-transparent relative text-white'>
             <div className='hero-upper h-[65vh] relative lg:top-[12%] top-[8%] lg:flex justify-between'>
                 <div className='numbaring hidden lg:h-full w-[10%] lg:flex flex-col pl-[2rem] pr-[2rem] justify-center'>
                     <div style={getNumberStyle(0)}>01</div>

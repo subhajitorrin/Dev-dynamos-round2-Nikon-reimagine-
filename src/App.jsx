@@ -9,19 +9,21 @@ import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
 import InstagramSection from "./components/InstagramSection/InstagramSection";
 import Accessory from "./components/AccessoryComponent/Accessory";
+import StarsCanvas from './components/StarBackground'
 function App() {
   return (
     <>
-      <div className="bg-[#00040c]">
+      <div className="bg-black">
+        <StarsCanvas />
         <Hero />
-        {/* <ScrollingCanvus1 /> */}
+        <ScrollingCanvus1 />
         <Features />
         <Product />
-        <Accessory />
         <ScrollingCanvus2 />
+        <Accessory />
         <Myswipper />
-        <InstagramSection/>
         <ScrollingCanvus3 />
+        <InstagramSection/>
       </div>
     </>
   );
