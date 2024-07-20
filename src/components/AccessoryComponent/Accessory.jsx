@@ -148,10 +148,15 @@ function Accessory() {
     plus.forEach((item) => {
       item.addEventListener("click", () => {
         let t1 = gsap.timeline();
-        t1.to(".DetailsofAccessory", {
+
+        t1.to(".DetailsofAccessory",{
+          display:"flex",
+        })
+        .to(".DetailsofAccessory", {
           opacity: 1,
           backdropFilter: "blur(50px)",
           pointerEvents: "all",
+          
         })
           .to(".CloseAccessoryList", {
             opacity: 1,
@@ -166,6 +171,7 @@ function Accessory() {
     XYZ.forEach((item,index)=>{
       item.addEventListener("click",()=>{
         setlistArrIndex(index);
+        document.querySelector(".ImgDetail").style.opacity = 1;
         document.querySelector(".ImgDetail").style.opacity = 1;
       }
       )
@@ -185,6 +191,7 @@ function Accessory() {
         .to(".DetailsofAccessory", {
           opacity: 0,
           backdropFilter: "blur(0px)",
+          display:"none",
         });
     });
   }, []);

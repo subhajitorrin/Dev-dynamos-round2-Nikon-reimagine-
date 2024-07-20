@@ -18,7 +18,7 @@ function InstagramSection() {
           start: "30% 55%",
           end: "100% 50%",
           scrub: true,
-          pin: true,
+          // pin: true,
           markers:{
             start:"purple",
           },
@@ -37,7 +37,7 @@ function InstagramSection() {
   return (
     <div className=" bg-transparent" ref={ref}>
       <div
-        className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden "
+        className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden"
         ref={mainRef}
       >
         <p className="text-[#ffd900] text-center">Nikon Film</p>
