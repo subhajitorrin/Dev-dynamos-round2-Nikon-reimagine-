@@ -40,8 +40,8 @@ function InstagramSection() {
         className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden"
         ref={mainRef}
       >
-        <p className="text-[#ffd900] text-center">Nikon Film</p>
-        <p className="mt-[40px] text-center text-[5vw] text-white font-bold leading-[80%]">
+        <p className="text-[#ffd900] text-center  absolute top-0">Nikon Film</p>
+        <p className="mt-[40px] text-center text-[5vw] text-white font-bold leading-[80%] absolute top-0">
           Get the best out of <br />
           our unique <br />
           Chemistry

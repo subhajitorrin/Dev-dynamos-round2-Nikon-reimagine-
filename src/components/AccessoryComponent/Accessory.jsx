@@ -88,8 +88,8 @@ function Accessory() {
     const timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".NikonWrapAcess",
-        start: "60% 55%",
-        end: "160% 50%",
+        start: "55% 55%",
+        end: "140% 50%",
         scrub: 1,
         markers: true,
         scroller:"body",
@@ -112,7 +112,7 @@ function Accessory() {
           duration: 0.2,
           scale: 2.5,
         },
-        []
+        [0.3]
       )
       .to(
         ".Filters",
@@ -122,7 +122,7 @@ function Accessory() {
           scale: 2.5,
           zIndex: 3,
         },
-        []
+        [0.3]
       )
       .to(
         ".Batteries",
@@ -131,7 +131,7 @@ function Accessory() {
           duration: 1,
           scale: 2.5,
         },
-        []
+        [0.3]
       )
       .to(
         ".Chargers",
@@ -140,8 +140,50 @@ function Accessory() {
           duration: 1,
           scale: 2.5,
         },
-        []
+        [0.3]
+      )
+      .to(".CameraImg", {
+        gap: "0rem",
+        duration: 0.5,
+      },[2.1])
+      .to(
+        ".SpeedLight",
+        {
+          x: "0%",
+          duration: 0.5,
+          scale: 1,
+        },
+        [2]
+      )
+      .to(
+        ".Filters",
+        {
+          x: "0%",
+          duration: 0.5,
+          scale: 1,
+          zIndex: 3,
+        },
+        [2]
+      )
+      .to(
+        ".Batteries",
+        {
+          x: "0%",
+          duration: 0.5,
+          scale: 1,
+        },
+        [2]
+      )
+      .to(
+        ".Chargers",
+        {
+          x: "0%",
+          duration:0.5,
+          scale: 1,
+        },
+        [2]
       );
+
   }, [".CameraImg"]);
   useEffect(() => {
     let plus = document.querySelectorAll(".MoreAboutProduct");

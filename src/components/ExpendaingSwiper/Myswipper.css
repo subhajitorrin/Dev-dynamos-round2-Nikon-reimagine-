@@ -27,7 +27,7 @@
   top: 25%;
   z-index: 2;
   backdrop-filter: blur(50px);
-  background-color: blue;
+  /* background-color: blue; */
 
 }
 
