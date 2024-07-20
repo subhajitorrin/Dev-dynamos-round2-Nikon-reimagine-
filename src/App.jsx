@@ -13,7 +13,7 @@ import StarsCanvas from './components/StarBackground'
 function App() {
   return (
     <>
-      <div className="bg-black">
+      <div className="bg-[#010413]">
         <StarsCanvas />
         <Hero />
         <ScrollingCanvus1 />

@@ -54,7 +54,7 @@ const Features = () => {
 
 
     return (
-        <div className='w-full md:h-[125vh] h-[80vh] bg-[#00040c] relative text-white lg:p-[2rem]'>
+        <div className='w-full md:h-[125vh] h-[80vh] bg-transparent relative text-white lg:p-[2rem]'>
             <div ref={FeatureRef} className='flex flex-col items-center lg:pl-[10rem] lg:pr-[10rem] w-full'>
                 <h2 className='text-4xl font-[600] mb-[10px]'>Best Selling Camera</h2>
                 <p className='md:w-[70%] text-center opacity-[0.7] text-[12px] md:text-[15px]'>Elievate your photography game with our range of professionals grade cameras and accessories capture every moment with our high-quality cameras and lenses</p>

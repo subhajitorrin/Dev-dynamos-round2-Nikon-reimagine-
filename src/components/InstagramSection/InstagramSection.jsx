@@ -35,7 +35,7 @@ function InstagramSection() {
     { scope: ref }
   );
   return (
-    <div className=" bg-slate-600" ref={ref}>
+    <div className=" bg-transparent" ref={ref}>
       <div
         className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden "
         ref={mainRef}
