@@ -8,14 +8,16 @@ import ScrollingCanvus3 from "./components/Scrolling-Canvus3/ScrollingCanvus3";
 import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
 import InstagramSection from "./components/InstagramSection/InstagramSection";
+import Accessory from "./components/AccessoryComponent/Accessory";
 function App() {
   return (
     <>
       <div className="bg-[#00040c]">
         <Hero />
-        <ScrollingCanvus1 />
+        {/* <ScrollingCanvus1 /> */}
         <Features />
         <Product />
+        <Accessory />
         <ScrollingCanvus2 />
         <Myswipper />
         <InstagramSection/>

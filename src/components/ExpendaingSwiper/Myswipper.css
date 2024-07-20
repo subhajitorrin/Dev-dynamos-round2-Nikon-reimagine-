@@ -2,8 +2,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   /* padding: 0 10rem; */
+  position: relative;
+  gap:0px !important;
+  background-color: black;
 }
 
 .swiper-button-next,
@@ -16,7 +18,6 @@
 }
 
 .mainslide {
-  /* background-color: red; */
   display: flex !important;
   justify-content: center !important;
   align-items: flex-start !important;
@@ -24,7 +25,9 @@
   height: 60vh !important;
   position: relative;
   top: 25%;
-  /* background-color: red; */
+  z-index: 2;
+  backdrop-filter: blur(50px);
+  background-color: blue;
 
 }
 
@@ -32,39 +35,38 @@
   height: 75%;
   width: 90%;
   background-color: lightgray;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   border-radius: 10px;
   box-shadow: black;
   transition: all 0.3s ease;
   box-shadow: 5px 10px 8px #26262695;
+  background-size:cover;
+  position: relative;
 }
 
 .slide1 {
   background-color: #ff9999;
   /* padding-left: 10rem ; */
-  background-image: url("./assest/img1.png");
-  background-size: contain;
+  background-image: url("../../assets/feature-nikkor-120-million-nikon-cameras-lenses-accessories.jpg");
   background-repeat: no-repeat;
 }
 
 .slide2 {
-  background-color: #99ccff;
-  background-image: url("./assest/img2.png");
-  background-size: contain;
+  /* background-color: #99ccff; */
+  background-image: url("../../assets/feature-nikkor-z-28-400mm-nikon-cameras-lenses-accessories.jpg");
+  
   background-repeat: no-repeat;
 }
 
 .slide3 {
   background-color: #ccff99;
-  background-image: url("./assest/img3.png");
-  background-size: contain;
+  background-image: url("../../assets/apac-feature-nikon-z6iii-mirrorless-camera-nikon-cameras-lenses-accessories.jpg");
   background-repeat: no-repeat;
 }
 
 .slide4 {
   background-color: #ffcc99;
-  background-image: url("./assest/img4.png");
-  background-size: contain;
+  background-image: url("../../assets/feature-nikkor-z-35mm-mirrorless-lens-nikon-cameras-lenses-accessories.jpg");
   background-repeat: no-repeat;
 }
 
@@ -179,3 +181,72 @@
   align-items: flex-end;
   justify-content:space-between;
  }
+ .BackSlideProductInformation>.NewsProduct{
+  width: 100%;
+  height:20%;
+ text-overflow:ellipsis;
+ font-weight: bolder;
+ text-align: center;
+ padding-left: 0.5rem;
+ }
+ .BackSlideProductInformation>.NewsProduct>p{
+  font-style: italic;
+ }
+.test{
+  width: 550px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+  font-size: 5rem;
+  color: white;
+  font-weight: bolder;
+}
+.test>.Arrow{
+  width: 500px;
+}
+@media(max-width:768px){
+  .test{
+    width:100%;
+  color:white;
+  font-size: 2.7rem;
+  text-align: center;
+  left:0px;
+  position: absolute;
+  top:0px !important;
+  z-index: 1;
+  }
+}
+.NewsDate{
+  width: fit-content;
+  height:fit-content;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  position: absolute;
+  bottom:40px;
+  left:20px;
+  border-radius: 30px;
+  background-color: rgb(127, 255, 212);
+  text-align: center;
+}
+.SeeMoreNews{
+  width: 200px;
+  height: 60px;background-color: white;
+  position: absolute;
+  right:30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  font-weight: bolder;
+}
+.SeeMoreNews::after{
+  width: 0px !important;
+}
+.SeeMoreNews:hover{
+  background-color: blue !important;
+}
+a{
+  color:blue !important;
+  text-decoration-line: underline;
+  text-decoration: solid;
+  text-decoration-color: blue;
+}

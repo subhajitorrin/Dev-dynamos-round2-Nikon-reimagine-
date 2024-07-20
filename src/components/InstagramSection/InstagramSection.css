@@ -1,0 +1,27 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Script&display=swap');
+.InstaVideo{
+    height: 100%;
+    width: 200%;
+}
+.VideoSource{
+    object-fit:contain;
+}
+.InstaVideoHeading{
+    margin-top: 8%;
+    font-size: 4.8rem;
+    font-family: "League Script";
+    font-weight: bolder;
+}
+.instaSectionImgCont{
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+.InstaVideoFooter{
+    font-size: 1rem;
+    margin-bottom: 8%;
+    font-family:"League Script" ;
+    text-align: center;
+    font-weight: bolder;
+}

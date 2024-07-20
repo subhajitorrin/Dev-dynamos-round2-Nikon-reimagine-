@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useEffect, useRef } from "react";
 import InstagreamCards from "./InstagreamCards";
-
+import './InstagramSection.css'
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
@@ -19,7 +19,9 @@ function InstagramSection() {
           end: "100% 50%",
           scrub: true,
           pin: true,
-          // markers: true,
+          markers:{
+            start:"purple",
+          },
         },
       });
       t1.to(".instaSectionImgCont", {
@@ -33,9 +35,9 @@ function InstagramSection() {
     { scope: ref }
   );
   return (
-    <div className="" ref={ref}>
+    <div className=" bg-slate-600" ref={ref}>
       <div
-        className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden"
+        className="min-h-screen py-[5rem] w-[100%] overflow-y-hidden "
         ref={mainRef}
       >
         <p className="text-[#ffd900] text-center">Nikon Film</p>
@@ -45,10 +47,16 @@ function InstagramSection() {
           Chemistry
         </p>
         <div className="flex justify-center p-[5rem]">
-          <div className="instaSectionImgCont h-[900px] w-[900px] bg-white rotate-[-3deg] relative"></div>
+          <div className="instaSectionImgCont h-[900px] w-[900px] rotate-[-3deg] relative  flex flex-col items-center justify-center">
+            <span className="InstaVideoHeading">The Beauty Of Varanasi</span>
+            <video  className="InstaVideo"  autoPlay muted >
+              <source className="VideoSource" src="src\assets\instavideo.mp4" type="video/mp4" />
+            </video>
+            <span className="InstaVideoFooter">(vivid nuances of Varanasi as captured by #NikonCreator Kumar Gautam @kumaarphotography)</span>
+          </div>
         </div>
         <div className="flex justify-center">
-          <p className="text-[2vw] text-white font-bold w-[1000px]">
+          <p className="text-[2vw] text-white font-bold w-[1000px] ">
             The I-2 shoots with next-level clarity and detail on Polaroid’s
             iconic square frame film, meaning you can do things with Polaroid’s
             unique film chemistry that you’ve never done before.

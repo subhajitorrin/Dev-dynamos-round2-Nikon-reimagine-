@@ -3,7 +3,7 @@ import { Navigation, Pagination, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "./Myswipper.css";
-
+import { FaArrowRightLong } from "react-icons/fa6";
 const Myswipper = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // const [abhra, setAbhra] = useState(0);
@@ -63,15 +63,19 @@ const Myswipper = () => {
 
   return (
     <div className="main">
+      <div className="test">Latest News & Articles <FaArrowRightLong className="Arrow"/></div>
       <Swiper
         id="mainswipper"
         modules={[Navigation, Pagination, A11y]}
-        spaceBetween={10}
+        spaceBetween={0}
+        mousewheel={{
+          invert:true,
+        }}
         slidesPerView={3}
         pagination={{ clickable: false }}
         scrollbar={false}
         onSlideChange={handleSlide}
-        slidesOffsetBefore={30}
+        slidesOffsetBefore={100}
         slidesOffsetAfter={600}
         direction="vertical"
         centeredSlides={false}
@@ -86,48 +90,50 @@ const Myswipper = () => {
         }}
       >
         <SwiperSlide className="mainslide">
-          <div className="slide1 slide"></div>
+          <div className="slide1 slide"><div className="NewsDate">23 March , 2024</div></div>
           <div className="back_slide">
             <div className="BackSlideProductInformation">
-              <div className="">Shaoo lawra</div>
-              <div className="">Abhra Lawra</div>
-              <div className="">Orrin machu</div>
+            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
+              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
+             
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="mainslide">
-          <div className="slide2 slide"></div>
+          <div className="slide2 slide"><div className="NewsDate">23 March , 2024</div></div>
           <div className="back_slide">
             <div className="BackSlideProductInformation">
-              <div className="">Shaoo lawra</div>
-              <div className="">Abhra Lawra</div>
-              <div className="">Orrin machu</div>
+            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
+              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
+             
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="mainslide">
-          <div className="slide3 slide"></div>
+          <div className="slide3 slide"><div className="NewsDate">23 March , 2024</div></div>
           <div className="back_slide">
             <div className="BackSlideProductInformation">
-              <div className="">Shaoo lawra</div>
-              <div className="">Abhra Lawra</div>
-              <div className="">Orrin machu</div>
+            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
+              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
+             
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide className="mainslide">
-          <div className="slide4 slide"></div>
+          <div className="slide4 slide"><div className="NewsDate">23 March , 2024</div></div>
           <div className="back_slide">
             <div className="BackSlideProductInformation">
-              <div className="">Shaoo lawra</div>
-              <div className="">Abhra Lawra</div>
-              <div className="">Orrin machu</div>
+              <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
+              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
+             
             </div>
           </div>
         </SwiperSlide>
+      <button className="SeeMoreNews">See More</button>
+
       </Swiper>
     </div>
   );
