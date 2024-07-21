@@ -1,4 +1,4 @@
-.main {
+.SwipperMain {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +26,7 @@
   position: relative;
   top: 25%;
   z-index: 2;
-  backdrop-filter: blur(50px);
+  /* backdrop-filter: blur(50px); */
   /* background-color: blue; */
 
 }
@@ -114,7 +114,7 @@
 .back_slide {
   height: 100%;
   width: 100%;
-  background-color: #f9f9f9;
+  background-color: transparent;
   position: absolute !important;
   border-radius: 10px;
   top: 0;
@@ -188,6 +188,7 @@
  font-weight: bolder;
  text-align: center;
  padding-left: 0.5rem;
+ color: white;
  }
  .BackSlideProductInformation>.NewsProduct>p{
   font-style: italic;

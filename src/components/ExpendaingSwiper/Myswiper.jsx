@@ -62,8 +62,8 @@ const Myswipper = () => {
   }
 
   return (
-    <div className="main">
-      <div className="test">Latest News & Articles <FaArrowRightLong className="Arrow"/></div>
+    <div className="SwipperMain">
+      {/* <div className="test">Latest News & Articles <FaArrowRightLong className="Arrow"/></div> */}
       <Swiper
         id="mainswipper"
         modules={[Navigation, Pagination, A11y]}
@@ -89,6 +89,7 @@ const Myswipper = () => {
           },
         }}
       >
+        
         <SwiperSlide className="mainslide">
           <div className="slide1 slide"><div className="NewsDate">23 March , 2024</div></div>
           <div className="back_slide">
@@ -132,7 +133,7 @@ const Myswipper = () => {
             </div>
           </div>
         </SwiperSlide>
-      <button className="SeeMoreNews">See More</button>
+      {/* <button className="SeeMoreNews -z-1">See More</button> */}
 
       </Swiper>
     </div>

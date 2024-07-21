@@ -11,6 +11,7 @@ import InstagramSection from "./components/InstagramSection/InstagramSection";
 import Accessory from "./components/AccessoryComponent/Accessory";
 import StarsCanvas from "./components/StarBackground";
 import LowerInstagram from "./components/LowerInstagramSection/LowerInstagram";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
@@ -27,6 +28,7 @@ function App() {
         <InstagramSection />
         <LowerInstagram />
         <ScrollingCanvus3 />
+        <Footer/>
       </div>
     </>
   );
