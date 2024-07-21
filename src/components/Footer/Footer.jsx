@@ -1,5 +1,4 @@
 import React from "react";
-import "./Footer.css";
 import Nikonlogo from "../../assets/Nikon.jpg";
 import { FaFacebookF } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -12,11 +11,11 @@ const Footer = () => {
       <div className=" flex gap-20 items-center">
         <span className="text-white">Home</span>
         <span className="text-white">Product</span>
-        <span className="text-white">Pricing</span>
+        <span className="text-white ">Tools & downloads</span>
         <img src={Nikonlogo} alt="" className="h-[40px]" />
         <span className="text-white">Blogs</span>
         <span className="text-white">Contact Us</span>
-        <span className="text-white">About</span>
+        <span className="text-white">About Nikon</span>
       </div>
       <div className="flex gap-7">
         <FaFacebookF className="text-white text-[35px] p-1.5  rounded-[12px]" />
