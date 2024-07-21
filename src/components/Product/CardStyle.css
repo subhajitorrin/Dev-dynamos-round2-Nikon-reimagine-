@@ -33,7 +33,9 @@
     align-items: center;
     overflow: hidden;
 }
-
+/* .front .img{
+    transition: all 1s ease-in-out;
+} */
 /* .back::before {
     position: absolute;
     content: ' ';

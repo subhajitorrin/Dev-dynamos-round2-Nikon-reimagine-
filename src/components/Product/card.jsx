@@ -19,7 +19,7 @@ const Card = ({src,name,price,secPrice,rating}) => {
                     </div>
                 </div>
                 <div className="front">
-                    <div className="img pl-[3rem] pr-[3rem] object-contain relative h-[60%]">
+                    <div className="img pl-[3rem] pr-[3rem] object-contain relative h-[60%] flex items-center justify-center hover:translate-x-6 hover:scale-[1.2] transition-all">
                         <img src={src} alt="cmaera img" width={"100%"} height={"100%"}/>
                     </div>
                     <div className="front-content relative">

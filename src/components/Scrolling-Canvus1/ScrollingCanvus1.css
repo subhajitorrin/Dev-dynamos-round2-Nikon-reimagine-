@@ -1,32 +1,55 @@
 .App {
-    font-family: sans-serif;
-    text-align: center;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.skeleton {
+  background-color: rgba(240, 240, 240, 1);
+  background-image: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1),
+    rgba(240, 240, 240, 1),
+    rgba(255, 255, 255, 1),
+    rgba(240, 240, 240, 1),
+    rgba(240, 240, 240, 1)
+  );
+  background-size: 200px 100%;
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 1;
+  width: 100%;
+  animation: skeleton 500ms ease-in-out infinite;
+}
+
+@keyframes skeleton {
+  0% {
+    background-position: -200px 0;
   }
-  
-  .skeleton {
-    background-color: rgba(240, 240, 240, 1);
-    background-image: linear-gradient(
-      90deg,
-      rgba(240, 240, 240, 1),
-      rgba(240, 240, 240, 1),
-      rgba(255, 255, 255, 1),
-      rgba(240, 240, 240, 1),
-      rgba(240, 240, 240, 1)
-    );
-    background-size: 200px 100%;
-    background-repeat: no-repeat;
-    border-radius: 2px;
-    display: inline-block;
-    line-height: 1;
-    width: 100%;
-    animation: skeleton 500ms ease-in-out infinite;
-  
-    @keyframes skeleton {
-      0% {
-        background-position: -200px 0;
-      }
-      100% {
-        background-position: calc(200px + 100%) 0;
-      }
-    }
+  100% {
+    background-position: calc(200px + 100%) 0;
   }
+}
+
+.text-overlay:hover .text-3d {
+  /* pointer-events: none; */
+  transform: perspective(500px) rotateY(0deg) rotateX(0deg);
+}
+.text-3d {
+  --shadow-color: #000;
+  --shadow-size: 1px;
+  text-shadow: var(--shadow-size) var(--shadow-size) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 2) calc(var(--shadow-size) * 2) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 3) calc(var(--shadow-size) * 3) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 4) calc(var(--shadow-size) * 4) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 5) calc(var(--shadow-size) * 5) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 6) calc(var(--shadow-size) * 6) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 7) calc(var(--shadow-size) * 7) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 8) calc(var(--shadow-size) * 8) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 9) calc(var(--shadow-size) * 9) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 10) calc(var(--shadow-size) * 10) 0 var(--shadow-color);
+  transform: perspective(500px) rotateY(25deg) rotateX(5deg);
+  transition: transform 0.5s;
+  display: inline-block;
+}
+

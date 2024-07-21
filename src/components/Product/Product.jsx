@@ -51,7 +51,7 @@ const Product = () => {
                 </button>
             </div>
             <div className='camera-product w-full relative flex flex-wrap items-center justify-center gap-[5rem] mt-[2rem]'>
-                <Card src={Img1} name={product_info[0].name} />
+                <Card src={Img1} name={product_info[0].name}/>
                 <Card src={Img2} name={product_info[1].name}/>
                 <Card src={Img3} name={product_info[2].name}/>
             </div>
