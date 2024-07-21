@@ -9,7 +9,8 @@ import Features from "./components/Features/Features";
 import Product from "./components/Product/Product";
 import InstagramSection from "./components/InstagramSection/InstagramSection";
 import Accessory from "./components/AccessoryComponent/Accessory";
-import StarsCanvas from './components/StarBackground'
+import StarsCanvas from "./components/StarBackground";
+import LowerInstagram from "./components/LowerInstagramSection/LowerInstagram";
 function App() {
   return (
     <>
@@ -23,9 +24,9 @@ function App() {
         <Accessory />
         <Myswipper />
         {/* <div className=" w-screen h-screen bg-stone-700" /> */}
-        <InstagramSection/>
+        <InstagramSection />
+        <LowerInstagram />
         <ScrollingCanvus3 />
-        
       </div>
     </>
   );
