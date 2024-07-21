@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
-function InstagreamCards() {
+function InstagreamCards({src}) {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -46,15 +46,21 @@ function InstagreamCards() {
               <div
                 ref={(el) => (boxRefs.current[0] = el)}
                 className={`absolute h-[750px] w-[600px]  bg-[red] z-[100]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
               <div
                 ref={(el) => (boxRefs.current[1] = el)}
                 className={`absolute h-[720px] top-[20px] w-[600px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
               <div
                 ref={(el) => (boxRefs.current[2] = el)}
                 className={`absolute h-[720px] top-[20px] w-[600px]  rotate-[-3deg] left-[-70px] bg-[yellow] z-[98]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
             </div>
           </div>
           <div className="flex items-center justify-center w-[50%]">
@@ -106,15 +112,21 @@ function InstagreamCards() {
               <div
                 ref={(el) => (boxRefs.current[0] = el)}
                 className={`absolute h-[500px] w-[70vw]  bg-[red] z-[100] left-[50px]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
               <div
                 ref={(el) => (boxRefs.current[1] = el)}
                 className={`absolute h-[500px] w-[70vw] top-[-30px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
               <div
                 ref={(el) => (boxRefs.current[2] = el)}
                 className={`absolute h-[500px] w-[70vw] top-[40px]  rotate-[-3deg] left-[10px] bg-[yellow] z-[98]`}
-              ></div>
+              >
+                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+              </div>
             </div>
           </div>
           

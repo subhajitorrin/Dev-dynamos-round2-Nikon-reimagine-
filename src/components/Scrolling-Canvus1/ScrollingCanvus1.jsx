@@ -32,7 +32,7 @@ function ScrollingCanvus1() {
             <div style={{ height: "100vh", position: "relative" }}>
               <Sequence ref={ref} progress={progress} />
               <div
-                className="text-overlay absolute top-[20%] left-[10%] max-w-md text-white flex flex-col items-start justify-start"
+                className="text-overlay absolute md:top-[20%] top-[10%] md:left-[10%] left-[7%] md:max-w-md w-full text-white flex flex-col items-start justify-start "
                 style={{
                   opacity: overlayOpacity,
                   transition: "opacity 0.5s ease",
@@ -40,19 +40,19 @@ function ScrollingCanvus1() {
                 }}
               >
                 <p className="text-3d text-[18px] text-[#59c3ff] font-bold">Built-in manual controls</p>
-                <h1 className="text-3d text-[5rem] font-bold uppercase flex flex-wrap leading-[5.5rem]">
+                <h1 className="text-3d md:text-[5rem] text-[3.5rem] font-bold uppercase flex flex-wrap md:leading-[5.5rem] leading-[3.7rem]">
                   <span>Every</span> <span>angle</span> <span>Covered</span>
                 </h1>
               </div>
               <div
-                className="text-overlay absolute bottom-[20%] right-[10%] max-w-md text-white text-right"
+                className="text-overlay absolute md:bottom-[20%] bottom-[10%] md:right-[10%] w-full md:max-w-md text-white text-right"
                 style={{
                   opacity: overlayOpacity2nd,
                   transition: "opacity 0.5s ease",
                   textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
                 }}
               >
-                <h1 className="text-[5rem] font-bold uppercase leading-[5.5rem] mb-4">Ignite your passion.
+                <h1 className="md:text-[5rem] text-[3.3rem] font-bold uppercase md:leading-[5.5rem] leading-[3.7rem] md:mb-4">Ignite your passion.
                 </h1>
                 <p className="text-lg text-[#1e7ed8] overlay2">Enter a new dimension of Nikon Imaging with Z Series mirrorless cameras,
                 created from decades of refining camera design and performance.</p>

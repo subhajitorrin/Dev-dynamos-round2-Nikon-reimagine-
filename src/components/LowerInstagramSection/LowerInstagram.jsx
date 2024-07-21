@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import InstagreamCards from "../InstagramSection/InstagreamCards";
+import img1 from '../../assets/insta1.jpg';
+import img2 from '../../assets/insta2.jpg';
+import img3 from '../../assets/insta3.jpg';
+import img4 from '../../assets/insta4.jpg';
 
 function LowerInstagram() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -24,9 +28,9 @@ function LowerInstagram() {
             The <br /> Imperfectionists
           </p>
         </div>
-        <InstagreamCards />
-        <InstagreamCards />
-        <InstagreamCards />
+        <InstagreamCards src={img1}/>
+        <InstagreamCards src={img2}/>
+        <InstagreamCards src={img3}/>
       </div>
     );
   } else {
@@ -40,9 +44,9 @@ function LowerInstagram() {
             The <br /> Imperfectionists
           </p>
         </div>
-        <InstagreamCards />
-        <InstagreamCards />
-        <InstagreamCards />
+        <InstagreamCards src={img4}/>
+        <InstagreamCards src={img2}/>
+        <InstagreamCards src={img3}/>
       </div>
     );
   }
