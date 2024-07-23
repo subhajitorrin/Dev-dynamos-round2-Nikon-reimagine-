@@ -17,7 +17,7 @@ function ScrollingCanvus1() {
       setOverlayOpacity(0);
     }
 
-    if (progress > 0.7 && progress < 1.0) {
+    if (progress > 0.7 && progress < 0.8) {
       setOverlayOpacity2nd(1);
     } else {
       setOverlayOpacity2nd(0);
@@ -45,17 +45,15 @@ function ScrollingCanvus1() {
                 </h1>
               </div>
               <div
-                className="text-overlay absolute md:bottom-[20%] bottom-[10%] md:right-[10%] w-full md:max-w-md text-white text-right"
+                className="text-overlay absolute top-[45%] left-[0%] w-full text-gray-300"
                 style={{
                   opacity: overlayOpacity2nd,
                   transition: "opacity 0.5s ease",
                   textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
                 }}
               >
-                <h1 className="md:text-[5rem] text-[3.3rem] font-bold uppercase md:leading-[5.5rem] leading-[3.7rem] md:mb-4">Ignite your passion.
+                <h1 className="md:text-[8rem] text-[3.3rem] font-bold uppercase leading-[3.7rem]">Ignite your passion
                 </h1>
-                <p className="text-lg text-[#1e7ed8] overlay2">Enter a new dimension of Nikon Imaging with Z Series mirrorless cameras,
-                created from decades of refining camera design and performance.</p>
               </div>
               {updateOverlays(progress)}
             </div>

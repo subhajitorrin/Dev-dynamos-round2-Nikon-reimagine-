@@ -139,6 +139,31 @@
     transform: scale(2);
     color: #e2dfe3;
 }
+
+.timer-slider {
+    background-color: rgba(95, 88, 88, 0.295);
+    border-radius: 20px;
+    backdrop-filter: blur(200px);
+}
+
+.timer {
+    transition: all 1s ease-in-out;
+}
+.timer:hover {
+    border: 1px solid #7e3b95;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes floating {
     0% {
         transform: translateY(0px);

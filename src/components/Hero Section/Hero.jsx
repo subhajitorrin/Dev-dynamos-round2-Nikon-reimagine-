@@ -20,12 +20,18 @@ import { IoLogoYoutube } from "react-icons/io";
 import { BsTwitterX } from "react-icons/bs";
 import { RiScrollToBottomLine } from "react-icons/ri";
 import { IoPlaySharp } from "react-icons/io5";
+import { MdOutlineHomeMax } from "react-icons/md";
+import { SiCanvas } from "react-icons/si";
+import { MdOutlineFeaturedPlayList } from "react-icons/md";
+import { PiInstagramLogoDuotone } from "react-icons/pi";
+import { AiOutlineProduct } from "react-icons/ai";
 
 const Hero = () => {
 
     let priceInfo = [
         {
-            no: 1, price: "$70", name: "NIKON Z 50", info: "Get 1pc of Mount Adaptor FTZ II worth Rs. 22 995.00 at just Rs. 16 000.00" },
+            no: 1, price: "$70", name: "NIKON Z 50", info: "Get 1pc of Mount Adaptor FTZ II worth Rs. 22 995.00 at just Rs. 16 000.00"
+        },
         { no: 2, price: "$73", name: "nikon2", info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit" },
         { no: 3, price: "$80", name: "nikon3", info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit" },
         { no: 4, price: "$89", name: "nikon4", info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit" },
@@ -86,6 +92,23 @@ const Hero = () => {
     }, [])
     return (
         <div className='w-full h-[100vh] bg-transparent relative text-white'>
+            <div className='absolute top-[27%] right-0 mr-[2rem] p-[1rem] hidden lg:flex flex-col gap-[0.6rem] items-center justify-center z-[100000] timer-slider'>
+                <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
+                    <div className='absolute bg-[#7e3b95] w-[80%] h-[80%] rounded-full'></div><MdOutlineHomeMax className='w-[60%] h-[80%] z-[100]' />
+                </div>
+                <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
+                <SiCanvas className='w-[60%] h-[80%]' />
+                </div>
+                <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
+                <MdOutlineFeaturedPlayList className='w-[60%] h-[80%]' />
+                </div>
+                <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
+                <AiOutlineProduct className='w-[60%] h-[80%]' />
+                </div>
+                <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
+                <PiInstagramLogoDuotone className='w-[60%] h-[80%]' />
+                </div>
+            </div>
             <div className='hero-upper h-[65vh] relative lg:top-[12%] top-[8%] lg:flex justify-between'>
                 <div className='numbaring hidden lg:h-full w-[10%] lg:flex flex-col pl-[2rem] pr-[2rem] justify-center'>
                     <div style={getNumberStyle(0)}>01</div>
@@ -93,7 +116,7 @@ const Hero = () => {
                     <div style={getNumberStyle(2)}>03</div>
                     <div style={getNumberStyle(3)}>04</div>
                 </div>
-                <div className='caurosal overflow-hidden lg:w-[75%] w-full h-full flex items-center justify-center'>
+                <div className='caurosal overflow-hidden relative md:left-[-3%] w-full h-full flex items-center justify-center'>
                     <div className='absolute z-[1] lg:top-[3rem] top-[0rem]'>
                         <h1 className='lg:text-[20em] md:text-[10rem] sm:text-[10rem] text-[7rem] font-[700] heading gradiant-feature'>NIKON</h1>
                         <div className='circle absolute z-[-1] lg:top-[-2rem] top-[0rem] w-[60%] h-[120%] flex items-center justify-center lg:left-[20%]'>
@@ -137,8 +160,6 @@ const Hero = () => {
                     <div className="custom-swiper-button-prev" ref={prevRef}>Next</div>
                     <div className="custom-swiper-button-next" ref={nextRef}>Back</div>
                 </div>
-                <div className='w-[10%] border border-green-50 hidden lg:flex'>
-                </div>
             </div>
             <div className='hero-footer relative lg:top-[10rem] flex items-center justify-between pl-[2em] pr-[2rem] w-full'>
                 <div className='links flex'>
@@ -157,7 +178,7 @@ const Hero = () => {
                         <p className='opacity-[0.5]'>{priceInfo[activeIndex].info}</p>
                     </div>
                 </div>
-                <div className='scroll-down items-center flex flex-col gap-[5px]'>
+                <div className='scroll-down items-center flex flex-col gap-[5px] border border-gray-500 p-[1rem] timer-slider'>
                     <div className=''><RiScrollToBottomLine className='w-[30px] h-[30px]' /></div>
                     <h3 className='opacity-[0.7]'>Scroll</h3>
                     <div><IoPlaySharp className='transform rotate-90' /></div>
