@@ -12,11 +12,13 @@ import Accessory from "./components/AccessoryComponent/Accessory";
 import StarsCanvas from "./components/StarBackground";
 import LowerInstagram from "./components/LowerInstagramSection/LowerInstagram";
 import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
     <>
       <div className="bg-[#010413]">
         <StarsCanvas />
+        <Navbar/>
         <Hero />
         <ScrollingCanvus1 />
         <Features />
@@ -28,7 +30,7 @@ function App() {
         <InstagramSection />
         <LowerInstagram />
         <ScrollingCanvus3 />
-        <Footer/>
+        <Footer />
       </div>
     </>
   );
