@@ -20,10 +20,10 @@ function App() {
         <StarsCanvas />
         <Navbar/>
         <Hero />
-        <ScrollingCanvus1 />
+        {/* <ScrollingCanvus1 />
         <Features />
         <Product />
-        <ScrollingCanvus2 />
+        <ScrollingCanvus2 /> */}
         <Accessory />
         <Myswipper />
         {/* <div className=" w-screen h-screen bg-stone-700" /> */}
