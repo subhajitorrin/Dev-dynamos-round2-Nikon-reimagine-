@@ -17,16 +17,16 @@ const Product = () => {
         const timeline = gsap.timeline({
             scrollTrigger: {
               trigger: ".CategoryProduct",
-              start: "0.2% 0%",
-              end: "10% 5%",
+              start: "5% 0%",
+              end: "20% 5%",
               scrub: 1,
               markers: true,
               scroller: "body",
               pin: true,
             },
           });
-          timeline.to(".front",{
-            filter:"blur(0px)",
+          timeline.to(".overlay",{
+            height:0,
           })
       return () => {
         timeline.scrollTrigger.kill(true)
