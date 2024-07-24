@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Product.css'
 import Card from './card'
 import '../Features/Features.css'
@@ -7,9 +7,32 @@ import Img2 from '../../assets/product2.png';
 import Img3 from '../../assets/product3.png';
 import Img4 from '../../assets/product4.png';
 import Img6 from '../../assets/product6.png';
-
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 const Product = () => {
-
+    useEffect(() => {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+              trigger: ".CategoryProduct",
+              start: "0.2% 0%",
+              end: "10% 5%",
+              scrub: 1,
+              markers: true,
+              scroller: "body",
+              pin: true,
+            },
+          });
+          timeline.to(".front",{
+            filter:"blur(0px)",
+          })
+      return () => {
+        timeline.scrollTrigger.kill(true)
+      }
+    }, [])
+    
     const product_info = [
         {name:"NIKON Z6III",price:"$499",secPrice:"",rating:""},
         {name:"NIKON Z F",price:"$499",secPrice:"",rating:""},
@@ -21,7 +44,7 @@ const Product = () => {
 
 
     return (
-        <div className='w-full bg-transparent relative md:p-[2rem] md:mt-[4rem] p-[1rem] text-white'>
+        <div className=' CategoryProduct w-full bg-transparent relative md:p-[2rem] md:mt-[4rem] p-[1rem] text-white'>
             <div className='header-product w-full flex flex-col  '>
                 <h1 className='lg:text-[10rem] font-[500] text-center gradiant-feature'>CATEGORY</h1>
                 <button className='ml-[2rem] button'>
@@ -58,7 +81,7 @@ const Product = () => {
             <div className='lens-productw-full relative flex flex-wrap items-center justify-center gap-[5rem] mt-[4rem]'>
                 <Card src={Img4} name={product_info[3].name} />
                 <Card src={Img6} name={product_info[4].name} />
-                <Card src={Img4} name={product_info[5].name} />
+                <Card  src={Img4} name={product_info[5].name} />
             </div>
         </div>
     )

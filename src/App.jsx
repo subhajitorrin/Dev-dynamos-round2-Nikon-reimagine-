@@ -46,7 +46,7 @@ function App() {
         <InstagramSection />
         <LowerInstagram />
         <ScrollingCanvus3 />
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );
