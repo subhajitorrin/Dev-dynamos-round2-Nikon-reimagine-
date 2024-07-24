@@ -56,7 +56,6 @@ const Myswipper = () => {
       });
     };
     return () => {
-     timeline.scrollTrigger.kill(true);
     };
   }, [windowWidth]);
 
