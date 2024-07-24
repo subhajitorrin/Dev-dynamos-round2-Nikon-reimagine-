@@ -47,7 +47,7 @@ const Myswipper = () => {
             abhra = 0
             
           } else {
-            slide.style.transform = "translateY(-60px) scale(0.65)";
+            slide.style.transform = "translateY(-15px) scale(1)";
             backslide[i].style.scale = 1;
             swiperInstance.update();
             abhra = 1
