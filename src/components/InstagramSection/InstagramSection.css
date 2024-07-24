@@ -12,9 +12,10 @@
     font-size: 4.8rem;
     font-family: "League Script";
     font-weight: bolder;
+    color: white;
 }
 .instaSectionImgCont{
-    background-color: yellow;
+    background-color:transparent;
     align-items: center;
     justify-content: center;
 }
@@ -24,4 +25,5 @@
     font-family:"League Script" ;
     text-align: center;
     font-weight: bolder;
+    color:white;
 }

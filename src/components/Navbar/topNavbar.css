@@ -2,3 +2,25 @@
     background-image: url("../../assets/NIKONLOGO.webp");
     background-size: contain;
 }
+.TopNavIcon{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   background-color:rgba(245, 245, 245, 0.119);
+   border-radius: 30px;
+   transition: all 0.3s ease;
+   border:1px solid white
+}
+.TopNavIcon:hover{
+    scale:0.95;
+    border: 2px solid orange;
+    background: linear-gradient(to right,rgba(128, 0, 128, 0.585),rgba(0, 0, 255, 0.54),rgba(255, 166, 0, 0.58));
+}
+.search{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border:0px solid white !important;
+}

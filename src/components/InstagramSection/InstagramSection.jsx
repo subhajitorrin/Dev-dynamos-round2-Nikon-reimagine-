@@ -59,7 +59,7 @@ function InstagramSection() {
           </p>
           <div className="flex justify-center p-[3rem]  w-[100vw]  overflow-x-hidden">
             <div className="z-[500] scale-[.7] instaSectionImgCont h-[500px] rotate-[-3deg] relative  flex flex-col items-center justify-center">
-              <span className="InstaVideoHeading text-[5vw]">
+              <span className="InstaVideoHeading text-[5vw] font-extrabold text-white">
                 The Beauty Of Varanasi
               </span>
               <video className="InstaVideo" autoPlay muted>
@@ -119,7 +119,7 @@ function InstagramSection() {
           </p>
           <div className="flex justify-center p-[5rem]">
             <div className="instaSectionImgCont h-[900px] w-[900px] rotate-[-3deg] relative  flex flex-col items-center justify-center">
-              <span className="InstaVideoHeading">The Beauty Of Varanasi</span>
+              {/* <span className="InstaVideoHeading">The Beauty Of Varanasi</span> */}
               <video className="InstaVideo" autoPlay muted>
                 <source
                   className="VideoSource"
@@ -127,10 +127,11 @@ function InstagramSection() {
                   type="video/mp4"
                 />
               </video>
-              <span className="InstaVideoFooter">
+              {/* <span className="InstaVideoFooter">
+              The Beauty Of Varanasi
                 (vivid nuances of Varanasi as captured by #NikonCreator Kumar
                 Gautam @kumaarphotography)
-              </span>
+              </span> */}
             </div>
           </div>
           <div className="flex justify-center">
