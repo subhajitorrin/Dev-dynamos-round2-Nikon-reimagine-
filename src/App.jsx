@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Hero from "./components/Hero Section/Hero";
 import Myswipper from "./components/ExpendaingSwiper/Myswiper";
@@ -13,12 +13,29 @@ import StarsCanvas from "./components/StarBackground";
 import LowerInstagram from "./components/LowerInstagramSection/LowerInstagram";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
+import TopNavbar from "./components/Navbar/TopNavbar";
 function App() {
+  const [scroll, setscroll] = useState(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setscroll(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="bg-[#010413]">
         <StarsCanvas />
-        <Navbar/>
+        <Navbar scroll={scroll}/> 
+        <TopNavbar scroll={scroll}/>
         <Hero />
         <ScrollingCanvus1 />
         <Features />

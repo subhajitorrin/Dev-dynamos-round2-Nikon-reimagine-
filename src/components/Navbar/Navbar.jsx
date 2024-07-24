@@ -8,7 +8,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
 
-function Navbar() {
+function Navbar({ scroll }) {
   const [isNavActive, setIsNavActive] = useState(false);
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
@@ -57,14 +57,16 @@ function Navbar() {
         {isNavActive ? (
           <div
             onClick={() => setIsNavActive(false)}
-            className="fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[25px] navicon"
+            
+            className="fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
           >
             <RxCross1 />
           </div>
         ) : (
           <div
             onClick={() => setIsNavActive(true)}
-            className="fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[25px] navicon"
+            style={{ opacity: scroll > 200 ? "1" : "0" }}
+            className="transition-all duration-300 ease-linear fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
           >
             <CiMenuFries />
           </div>
@@ -162,7 +164,9 @@ function Navbar() {
             <p>item</p>
             <p>item</p>
           </div>
-          <p className="flex justify-center">Nikon Imaging | India | Asia Pacific</p>
+          <p className="flex justify-center">
+            Nikon Imaging | India | Asia Pacific
+          </p>
         </div>
         <div className="h-screen w-full bg-transparent fixed z-[99999] text-white flex pointer-events-none">
           <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
