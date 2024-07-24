@@ -1,6 +1,34 @@
 .productCard{
     flex-shrink: 0;
-    width: 300px;
-    height:300px;
-    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height:350px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    /* background-color: rgb(255, 255, 255); */
+    padding: 5px;
+    gap:0.5rem;
+}
+.imgLink{
+    width: 90%;
+    height: 80%;
+    background-color: blue;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+.DetailsProduct{
+    font-weight: bolder;
+    color:white;
+    flex-shrink: 0;
+}
+.LearnMore{
+    color:white;
+    font-weight: bolder;
+}
+.LearnMore:hover{
+    background-color: transparent;
+    border: 4px solid black;
+    color:rgb(0, 0, 0);
+    flex-shrink: 0;
 }

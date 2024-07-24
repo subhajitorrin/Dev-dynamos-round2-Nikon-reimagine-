@@ -289,25 +289,25 @@ function Accessory() {
               <IoMdClose className="CloseAccessoryList" />
               <span className="Heading">
                 <summary>
-                  <div className="overlay">Speedlight</div>
+                  <div className="overlay"></div>
                   Speedlight
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay">Filter</div>
+                  <div className="overlay"></div>
                   Filter
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay">Battery</div>
+                  <div className="overlay"></div>
                   Battery
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay">Charger</div>
+                  <div className="overlay"></div>
                   Charger
                 </summary>
               </span>
