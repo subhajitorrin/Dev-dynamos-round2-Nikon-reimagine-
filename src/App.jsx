@@ -26,7 +26,6 @@ function App() {
         <ScrollingCanvus2 />
         <Accessory />
         <Myswipper />
-        {/* <div className=" w-screen h-screen bg-stone-700" /> */}
         <InstagramSection />
         <LowerInstagram />
         <ScrollingCanvus3 />

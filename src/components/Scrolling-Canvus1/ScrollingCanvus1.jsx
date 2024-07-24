@@ -39,7 +39,7 @@ function ScrollingCanvus1() {
                   textShadow: "2px 2px 0 #000, 4px 4px 0 #000, 6px 6px 0 #000, 8px 8px 0 #000",
                 }}
               >
-                <p className="text-3d text-[18px] text-[#59c3ff] font-bold">Built-in manual controls</p>
+                <p className="text-3d text-[18px] text-[#59c3ff] font-bold mb-2">Built-in manual controls</p>
                 <h1 className="text-3d md:text-[5rem] text-[3.5rem] font-bold uppercase flex flex-wrap md:leading-[5.5rem] leading-[3.7rem]">
                   <span>Every</span> <span>angle</span> <span>Covered</span>
                 </h1>
