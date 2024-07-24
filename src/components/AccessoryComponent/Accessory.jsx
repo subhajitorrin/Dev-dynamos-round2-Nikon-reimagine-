@@ -11,6 +11,7 @@ import lensbody from "../../assets/FinalCameraImagebody.png";
 import camerapart1 from "../../assets/fsa043ag_-_sb-5000_speedlight_2_-removebg-preview.png";
 import camerapart2 from "../../assets/62mm-circular-polariser-series-ii_heroimage-removebg-preview.png";
 import camerapart3 from "../../assets/vfb10413_en-el12-rechargeable-li-ion-battery_front_heroimage-removebg-preview.png";
+import ButtonComponent from "./spacebutton/ButtonComponent";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 function Accessory() {
@@ -436,9 +437,7 @@ function Accessory() {
             </div>
           </div>
           <div className="text-white absolute bottom-[2rem] right-[3rem]">
-            <button className="bg-[#946aaa] px-[.7rem] py-[.5rem] rounded-[10px] cursor-pointer">
-              Learn more
-            </button>
+            <ButtonComponent />
           </div>
         </div>
       </>
