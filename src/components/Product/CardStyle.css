@@ -29,7 +29,8 @@
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
     top:-10px;
-    height: 200%;
+    height:100% ;
+    width: 100%;
     flex-shrink: 0;
 }
 
@@ -108,7 +109,7 @@
 }
 
 .img{
-    animation: toptobottom 2s linear 0s infinite alternate both;
+    animation: toptobottom 2s linear 0s infinite alternate;
     animation-play-state: paused;
 }
 .img:hover{
@@ -188,6 +189,10 @@
 
 
    @keyframes toptobottom{
+    0%{
+        transform:translateY(0px) translateX(0px);
+    }
+
     100%{
         transform:translateY(15px) translateX(-15px);
     }

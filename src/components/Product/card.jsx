@@ -22,7 +22,7 @@ const Card = ({src,name,price,secPrice,rating}) => {
                     </div>
                 </div> */}
                 <div className="front">
-                    <div className='overlay w-full  absolute  z-40 '></div>
+                    <div className='overlay w-full absolute h-[200%] z-40'></div>
                     <div className="img pl-[3rem] pr-[3rem] object-contain relative h-[60%] flex items-center justify-center  transition-all">
                         <img src={src} alt="cmaera img" width={"100%"} height={"100%"}/>
                     </div>
