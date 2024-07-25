@@ -33,20 +33,120 @@ function LowerInstagram() {
     };
   }, []);
 
+  const textingmain = [
+    {
+      one: "Nikon: Capture Brilliance.",
+      two: [
+        "With",
+        "a",
+        "Nikon",
+        "in",
+        "your",
+        "hands,",
+        "every",
+        "click",
+        "is",
+        "more",
+        "than",
+        "just",
+        "a",
+        "photograph—it's",
+        "a",
+        "masterpiece",
+        "in",
+        "the",
+        "making.",
+        "Designed",
+        "for",
+        "those",
+        "who",
+        "see",
+        "the",
+        "world",
+        "through",
+        "a",
+        "lens",
+        "of",
+        "creativity",
+        "and",
+        "precision",
+      ],
+      three: "Caputring Moments",
+    },
+    {
+      one: "Nikon: Embrace Nature.",
+      two: [
+        "Explore",
+        "the",
+        "wild",
+        "and",
+        "capture",
+        "the",
+        "untamed",
+        "beauty",
+        "of",
+        "nature",
+        "with",
+        "Nikon.",
+        "From",
+        "the",
+        "majestic",
+        "peaks",
+        "to",
+        "the",
+        "serene",
+        "valleys,",
+        "each",
+        "shot",
+        "tells",
+        "a",
+        "story",
+        "of",
+        "the",
+        "natural",
+        "world.",
+      ],
+      three: "Capturing the Wilderness",
+    },
+    {
+      one: "Nikon: Innovating Photography.",
+      two: [
+        "Introducing",
+        "the",
+        "latest",
+        "features.",
+        "Unmatched",
+        "clarity",
+        "with",
+        "advanced",
+        "sensor",
+        "technology,",
+        "built-in",
+        "Wi-Fi",
+        "and",
+        "Bluetooth,",
+        "enhanced",
+        "low-light",
+        "performance.",
+      ],
+      three: "Pushing Boundaries",
+    }
+    
+    
+  ];
+
   if (width > 768) {
     return (
       <div>
         <div className="my-[10rem] ">
-          <p className="text-[#fff018] font-bold text-center">
-            Meet I-2 photographers
-          </p>
-          <p className="text-white text-[3vw] text-center font-bold leading-[90%] mt-[2rem]">
-            The <br /> Imperfectionists
+          <p className="text-[#fff018] font-bold text-center">Meet NIKON</p>
+          <p className="text-white text-[3vw] text-center font-bold leading-[90%] mt-[2rem] paci">
+            The <br /> Flawed Perfectionists
           </p>
         </div>
-        <InstagreamCards src={img1} />
-        <InstagreamCards src={img2} />
-        <InstagreamCards src={img3} />
+        <InstagreamCards src={img1} texting={textingmain[0]} />
+        <InstagreamCards src={img2} texting={textingmain[1]}/>
+        <InstagreamCards src={img3} texting={textingmain[2]}/>
       </div>
     );
   } else {
@@ -54,15 +154,12 @@ function LowerInstagram() {
       <div>
         <div className="my-[1rem] ">
           <p className="text-[#fff018] font-bold text-center">
-            Meet I-2 photographers
-          </p>
-          <p className="text-white text-[3vw] text-center font-bold leading-[90%] mt-[2rem]">
-            The <br /> Imperfectionists
+          The <br /> Flawed Perfectionists
           </p>
         </div>
-        <InstagreamCards src={img1} />
-        <InstagreamCards src={img2} />
-        <InstagreamCards src={img3} />
+        <InstagreamCards src={img1} texting={textingmain[0]} />
+        <InstagreamCards src={img2} texting={textingmain[1]}/>
+        <InstagreamCards src={img3} texting={textingmain[2]}/>
       </div>
     );
   }

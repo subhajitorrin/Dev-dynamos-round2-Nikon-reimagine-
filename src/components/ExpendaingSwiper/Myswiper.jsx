@@ -78,6 +78,7 @@ const Myswipper = () => {
             enabled: true,
             sensitivity: 1,
             releaseOnEdges: true,
+            thresholdTime:1,
           }}
           slidesPerView={3}
           pagination={{ clickable: false }}

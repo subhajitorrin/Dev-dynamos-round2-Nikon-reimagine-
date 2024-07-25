@@ -8,9 +8,10 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function InstagramSection() {
-  const text = `The I-2 shoots with next-level clarity and detail on Polaroid’s
-  iconic square frame film, meaning you can do things with
-  Polaroid’s unique film chemistry that you’ve never d one before.`.split(" ");
+  const text =
+    `These models feature stacked CMOS sensors, providing exceptional speed and performance. The Z8 and Z9 have a 45.7 MP resolution, with the Z9 offering advanced capabilities like 20 FPS continuous shooting and an impressive buffer size that allows for 1000+ images without slowing down.`.split(
+      " "
+    );
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -111,7 +112,7 @@ function InstagramSection() {
           ref={mainRef}
         >
           <p className="text-[#ffd900] text-center  ">Nikon Film</p>
-          <p className="mt-[40px] text-center text-[5vw] text-white font-bold leading-[80%] ">
+          <p className="mt-[40px] text-center text-[5vw] text-white font-bold leading-[95%] paci tracking-wide">
             Get the best out of <br />
             our unique <br />
             Chemistry
@@ -134,10 +135,12 @@ function InstagramSection() {
             </div>
           </div>
           <div className="flex justify-center">
-            <p className="text-[2vw] text-white font-bold w-[1000px] ">
-              The I-2 shoots with next-level clarity and detail on Polaroid’s
-              iconic square frame film, meaning you can do things with
-              Polaroid’s unique film chemistry that you’ve never done before.
+            <p className="text-[2vw] text-white font-bold w-[1000px] paci">
+              Nikon's cameras are equipped with state-of-the-art sensors that
+              deliver exceptional image quality. The high-resolution sensors
+              capture fine details with incredible accuracy, while Nikon’s
+              proprietary image processing engines, such as the EXPEED series,
+              enhance color accuracy, sharpness, and noise reduction.
             </p>
           </div>
         </div>
