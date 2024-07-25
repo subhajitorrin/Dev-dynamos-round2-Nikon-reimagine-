@@ -130,27 +130,25 @@ function Hero() {
               <SwiperSlide className="Slide">
                 <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative ">
                   <img className="SwiperCamera" src={Img} alt="" />
-                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
-                  <button className="BuyNow">BUY NOW</button>
+                  <span className="absolute model text-2xl">Z 6III + NIKKOR Z 24-70MM F/4 S<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 92 990.00</span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                   <img className="SwiperCamera" src={Img} alt="" />
-                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
+                  <span className="absolute model text-2xl">Z 6III BODY ONLY<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 47 990.00</span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                   <img className="SwiperCamera" src={Img} alt="" />
-                  <span className="absolute  text-2xl model">MOdel Name<span className=" text-4xl">|</span>Price</span>
+                  <span className="absolute  text-2xl model">Z 8 + NIKKOR Z 28-75MM F/2.8 LENS<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 4 08 995.00</span>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="Slide">
+              <SwiperSlide className="Slide relative">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                   <img className="SwiperCamera" src={Img} alt="" />
-                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
-
+                  <span className="absolute model text-2xl">Z 6II + NIKKOR Z 28-75MM F/2.8 LENS<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 24 995.00</span>
                 </div>
               </SwiperSlide>
             </Swiper>
