@@ -8,7 +8,7 @@ import Img from "../../assets/1.png"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CameraSvg from "./DSLR_Camera_REMIX_By_DG-RA.svg"
+import CameraSvg from "./lens.svg"
 import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
