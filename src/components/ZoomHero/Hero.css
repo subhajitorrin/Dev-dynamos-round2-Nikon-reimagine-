@@ -104,7 +104,9 @@
 }
 .model{
     position-anchor: --el-anchor !important;
-    bottom: 0px;
+    bottom: 30px;
+    font-weight: bolder;
+    
 }
 .timer-slider{
     backdrop-filter: blur(100px);
@@ -149,12 +151,19 @@
 }
 .BuyNow{
     position: absolute;
-    bottom: -80px;
-    background-color: orangered;
-    padding-top: 1rem;
-    padding-left: 1.5rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
-    scale: 2;
-    border-radius: 30px;
+    bottom: -70px;
+    border: 5px solid rgb(0, 0, 0);
+    padding-top: 0.7rem;
+    padding-left: 2rem;
+    padding-bottom: 0.7rem;
+    padding-right: 2rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    transition: all 0.3s ease;
+}
+
+
+.BuyNow:hover{
+    background: linear-gradient(to right,gray,yellow,gray);
 }

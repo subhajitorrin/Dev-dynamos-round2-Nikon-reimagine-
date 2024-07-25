@@ -30,27 +30,27 @@ function Accessory() {
       id: 0,
       prodList: [
         {
-          Name: "yo",
+          Name: "SPEEDLIGHT",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900648/1_gowkju.webp",
         },
         {
-          Name: "yo1",
+          Name: "SPEEDLIGHT",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900644/2_t4lodg.webp",
         },
         {
-          Name: "yo2",
+          Name: "SPEEDLIGHT",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900644/3_rnbeof.webp",
         },
         {
-          Name: "yo3",
+          Name: "SPEEDLIGHT",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900643/5_cqrvvb.webp",
         },
         {
-          Name: "yo4",
+          Name: "SPEEDLIGHT",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900643/4_ewvffz.webp",
         },
@@ -65,32 +65,32 @@ function Accessory() {
       id: 1,
       prodList: [
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/5_qag3ej.webp",
         },
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/1_nkrqxe.webp",
         },
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/2_mod3i0.webp",
         },
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/3_ajlc9m.webp",
         },
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900631/4_ctpgsq.webp",
         },
         {
-          Name: "bro",
+          Name: "ARCREST PROTECTION FILTER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721900631/6_lmkfkz.webp",
         },
@@ -100,32 +100,32 @@ function Accessory() {
       id: 2,
       prodList: [
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904007/s-l400-removebg-preview_olj5vf.webp",
         },
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904006/representative-25837-ChTdBUH__gl5j6s.webp",
         },
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904004/nikon-camera-lithium-ion-battery-removebg-preview_yeg2bw.webp",
         },
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904002/nikon-battery-500x500_ttnzau.webp",
         },
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904001/images-removebg-preview_nbhv5l.webp",
         },
         {
-          Name: "goat",
+          Name: "BATTERY",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721904001/17f176732449e726df1353649d7b5144-removebg-preview_yr11d1.webp",
         },
@@ -135,32 +135,32 @@ function Accessory() {
       id: 3,
       prodList: [
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905690/vea006ec-mh-24-battery-charger_storeimage-depositphotos-bgremover_ycqyw2.png",
         },
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905687/nikon-mh-24-original-imafjjtqgyzrcyhn-depositphotos-bgremover_zvvned.webp",
         },
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905685/mh_33-grey-depositphotos-bgremover_qwdcwt.webp",
         },
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905684/images-depositphotos-bgremover_j5j60q.webp",
         },
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905686/mh23-depositphotos-bgremover_nvybgg.webp",
         },
         {
-          Name: "tiger",
+          Name: "BATTERY CHARGER",
           bgimg:
             "https://res.cloudinary.com/difxhccup/image/upload/v1721905690/vea006ec-mh-24-battery-charger_storeimage-depositphotos-bgremover_ycqyw2.png",
         },

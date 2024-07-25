@@ -1,9 +1,10 @@
 import React, { useRef , useState } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import Sequence from "./Sequence";
-import "./ScrollingCanvus2.css"
+import "./ScrollingCanvus2.css";
 
 function ScrollingCanvus2() {
+<<<<<<< HEAD
     const ref = useRef();
     const [overlayOpacity, setOverlayOpacity] = useState(0);
     const [overlayOpacity2nd, setOverlayOpacity2nd] = useState(0);
@@ -22,6 +23,9 @@ function ScrollingCanvus2() {
       }
     };
 
+=======
+  const ref = useRef();
+>>>>>>> 39e20188c9baf03da38d082643e63c7ab655f092
   return (
     <div className="App" id="canvusScroller">
       <Controller>
