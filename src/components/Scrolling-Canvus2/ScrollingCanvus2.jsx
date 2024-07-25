@@ -1,10 +1,10 @@
 import React, { useRef } from "react";
 import { Controller, Scene } from "react-scrollmagic";
 import Sequence from "./Sequence";
-import "./ScrollingCanvus2.css"
+import "./ScrollingCanvus2.css";
 
 function ScrollingCanvus2() {
-    const ref = useRef();
+  const ref = useRef();
   return (
     <div className="App" id="canvusScroller">
       <Controller>
