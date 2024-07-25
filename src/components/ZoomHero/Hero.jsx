@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import "./Hero.css";
 // import HeroSwiper from ".././Hero Section/Hero";
 import Img from "../../assets/1.png"
+ const Img1 = "https://res.cloudinary.com/difxhccup/image/upload/v1721918564/nikon_product_angles_1380x1380_1_2-removebg-preview_qbzbva.png"
+  const Img2 = "https://res.cloudinary.com/difxhccup/image/upload/v1721918564/white_hero_2_1_3_2-removebg-preview_prabla.png"
+  const Img3 = "https://res.cloudinary.com/difxhccup/image/upload/v1721919218/img1_t7bgza.png"
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -135,19 +138,19 @@ function Hero() {
               </SwiperSlide>
               <SwiperSlide className="Slide">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
-                  <img className="SwiperCamera" src={Img} alt="" />
+                  <img className="SwiperCamera" src={Img1} alt="" />
                   <span className="absolute model text-2xl">Z 6III BODY ONLY<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 47 990.00</span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
-                  <img className="SwiperCamera" src={Img} alt="" />
+                  <img className="SwiperCamera" src={Img2} alt="" />
                   <span className="absolute  text-2xl model">Z 8 + NIKKOR Z 28-75MM F/2.8 LENS<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 4 08 995.00</span>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="Slide relative">
               <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
-                  <img className="SwiperCamera" src={Img} alt="" />
+                  <img className="SwiperCamera" src={Img3} alt="" />
                   <span className="absolute model text-2xl">Z 6II + NIKKOR Z 28-75MM F/2.8 LENS<span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 24 995.00</span>
                 </div>
               </SwiperSlide>
