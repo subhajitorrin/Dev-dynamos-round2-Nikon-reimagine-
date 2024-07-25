@@ -81,7 +81,7 @@ const Footer = () => {
     }, []);
 
     return (
-      <div className="FooterContainer m-0 max-h-[65vh] w-full flex flex-col items-center gap-5 justify-center relative z-[999999] pt-5 bg-transparent box-border">
+      <div className="border-t border-t-[#ffffff53] FooterContainer m-0 max-h-[65vh] w-full flex flex-col items-center gap-5 justify-center relative z-[999999] pt-[2rem] bg-transparent box-border">
         <div className="footertop flex items-center justify-center gap-10">
           <ul>
             {aboutNikon.map((item, index) => (

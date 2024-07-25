@@ -43,7 +43,7 @@ function App() {
         <ScrollingCanvus1 />
         <Features />
         <Product />
-        {/* <ScrollingCanvus2 /> */}
+        <ScrollingCanvus2 />
         <Accessory />
         <HoverSection />
         <Myswipper />
