@@ -41,7 +41,7 @@ function App() {
         <TopNavbar scroll={scroll} />
         <Hero />
         <div className=" w-screen h-screen bg-transparent"></div>
-         {/* <ScrollingCanvus1 /> */}
+         <ScrollingCanvus1 />
         <Features />
         <Product />
         {/* <ScrollingCanvus2 /> */}
