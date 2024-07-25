@@ -36,20 +36,20 @@ const HeroMobile = () => {
     {
       no: 2,
       price: "$73",
-      name: "nikon2",
-      info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit",
+      name: "NIKON Z 30",
+      info: "The Z 30 is made for your inner videographer",
     },
     {
       no: 3,
       price: "$80",
-      name: "nikon3",
-      info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit",
+      name: "NIKON Z f",
+      info: "The first touchFN camera in the Z series, it lets you effortlessly adjust settings when using EVF",
     },
     {
       no: 4,
       price: "$89",
-      name: "nikon4",
-      info: "Lorem ipsum dolor sit amet consectetur, adipisicing elit",
+      name: "NIKON Z 5",
+      info: "Z 5’s sensor is practically covered in focus points—273 of them, to be precise",
     },
   ];
 

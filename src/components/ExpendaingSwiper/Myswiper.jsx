@@ -100,7 +100,7 @@ const Myswipper = () => {
         >
           <SwiperSlide className="mainslide">
             <div className="slide1 slide">
-              <div className="NewsDate">23 March , 2024</div>
+              <div className="NewsDate">30 March , 2024</div>
             </div>
             <div className="back_slide">
               <div className="BackSlideProductInformation">
@@ -119,7 +119,7 @@ const Myswipper = () => {
 
           <SwiperSlide className="mainslide">
             <div className="slide2 slide scale-[.7]">
-              <div className="NewsDate">23 March , 2024</div>
+              <div className="NewsDate">3 March , 2024</div>
             </div>
             <div className="back_slide">
               <div className="BackSlideProductInformation">
@@ -138,7 +138,7 @@ const Myswipper = () => {
 
           <SwiperSlide className="mainslide">
             <div className="slide3 slide">
-              <div className="NewsDate">23 March , 2024</div>
+              <div className="NewsDate">14 March , 2024</div>
             </div>
             <div className="back_slide">
               <div className="BackSlideProductInformation">
