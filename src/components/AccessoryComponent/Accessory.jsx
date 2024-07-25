@@ -359,36 +359,35 @@ function Accessory() {
         });
       };
     }, []);
+    const titles = ["Speedlight", "Filter", "Battery", "Charger"];
+    const [isactiveunderliine, setisactiveunderliine] = useState(null);
+
+    const handleClick = (index) => {
+      setisactiveunderliine(index);
+    };
     return (
       <>
         <div className="NikonWrapAcess">
           <div className="DetailsofAccessory">
             <div className="listDetail">
               <IoMdClose className="CloseAccessoryList" />
-              <span className="Heading">
-                <summary>
-                  <div className="lineoverlay" defaultValue={false}></div>
-                  Speedlight
-                </summary>
-              </span>
-              <span className="Heading">
-                <summary>
-                  <div className="lineoverlay" defaultValue={false}></div>
-                  Filter
-                </summary>
-              </span>
-              <span className="Heading">
-                <summary>
-                  <div className="lineoverlay" defaultValue={false}></div>
-                  Battery
-                </summary>
-              </span>
-              <span className="Heading">
-                <summary>
-                  <div className="lineoverlay" defaultValue={false}></div>
-                  Charger
-                </summary>
-              </span>
+              {titles.map((title, index) => (
+                <span
+                  key={title}
+                  className="Heading select-none"
+                  onClick={() => handleClick(index)}
+                >
+                  <summary>
+                    <div
+                      className="lineoverlay"
+                      style={{
+                        width: index === isactiveunderliine ? "100%" : "0",
+                      }}
+                    ></div>
+                    {title}
+                  </summary>
+                </span>
+              ))}
             </div>
             <div className="ImgDetail">
               <AccessoryProduct

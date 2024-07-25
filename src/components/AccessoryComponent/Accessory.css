@@ -206,7 +206,7 @@
 .listDetail > span > summary:hover .lineoverlay {
   /* height: 5%;
   width: 100%; */
-  transition: all 0.3s linear;
+  transition: all 0.2s linear;
 }
 
 .ImgDetail {
