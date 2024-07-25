@@ -77,24 +77,25 @@ function Navbar({ scroll }) {
           <div className="flex justify-between">
             <div className="">
               <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
-                item
+                PRODUCTS
               </div>
               <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
-                item
+                Learn & Explore
               </div>
               <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
-                item
+                Nikon School
               </div>
               <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
-                item
+                Where to buy
               </div>
             </div>
             <div className="">
               <p className="w-[400px] relative top-[30%] right-[30%]">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Molestiae debitis obcaecati distinctio atque quis enim velit
-                itaque reiciendis ab deleniti. Lorem ipsum dolor sit amet
-                consectetur.
+                Discover the world of Nikon, where cutting-edge technology meets
+                unparalleled craftsmanship. From professional DSLRs and
+                mirrorless cameras to versatile lenses and accessories, Nikon
+                empowers photographers to capture breathtaking moments with
+                precision and creativity.
               </p>
             </div>
           </div>
@@ -159,12 +160,12 @@ function Navbar({ scroll }) {
         )}
         <div className="py-[3rem] navinner h-screen w-full bg-transparent fixed z-[999999] pointer-events-none text-white opacity-0 flex flex-col justify-between">
           <div className="text-[30px] flex flex-col gap-[1rem] items-center mt-[12rem]">
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
-            <p>item</p>
+            <p>Products</p>
+            <p>Learn & Explore</p>
+            <p>Nikon School</p>
+            <p>Where to buy</p>
+            <p>Promotions</p>
+            <p>Support</p>
           </div>
           <p className="flex justify-center">
             Nikon Imaging | India | Asia Pacific
