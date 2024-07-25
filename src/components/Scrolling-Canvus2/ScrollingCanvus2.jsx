@@ -22,7 +22,7 @@ function ScrollingCanvus2() {
         setOverlayOpacity2nd(0);
       }
 
-      if (progress > 0.7 && progress < 0.9) {
+      if (progress > 0.8 && progress < 1) {
         setOverlayOpacity3nd(1);
       } else {
         setOverlayOpacity3nd(0);
