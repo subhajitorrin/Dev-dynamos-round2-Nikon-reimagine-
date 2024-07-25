@@ -96,3 +96,7 @@ body {
     font-optical-sizing: auto;
     font-weight:900;
 }
+
+.scrollhide::-webkit-scrollbar{
+  display: none;
+}

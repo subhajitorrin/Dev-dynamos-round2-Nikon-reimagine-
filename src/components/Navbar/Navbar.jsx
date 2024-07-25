@@ -67,7 +67,10 @@ function Navbar({ scroll }) {
         ) : (
           <div
             onClick={() => setIsNavActive(true)}
-            style={{ opacity: scroll > 200 ? "1" : "0" }}
+            style={{
+              opacity: scroll > 200 ? "1" : "0",
+              pointerEvents: scroll > 200 ? "auto" : "none",
+            }}
             className="transition-all duration-300 ease-linear fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
           >
             <CiMenuFries />

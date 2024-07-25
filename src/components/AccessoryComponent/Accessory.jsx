@@ -178,7 +178,7 @@ function Accessory() {
           start: "55% 55%",
           end: "140% 50%",
           scrub: 1,
-          markers: true,
+          // markers: true,
           scroller: "body",
           pin: true,
         },
