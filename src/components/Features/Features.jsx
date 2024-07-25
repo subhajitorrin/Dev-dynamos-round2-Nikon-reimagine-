@@ -3,6 +3,7 @@ import './Features.css'
 import Tilt from 'react-parallax-tilt';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Nikon3d from './Nikon3d';
 
 import Fimg from '../../assets/featureImg1.png';
 import Trus1 from '../../assets/trusted1.png';
@@ -66,8 +67,8 @@ const Features = () => {
                 </div>
             </div>
             <div className='camera-features-container w-full relative md:h-[60vh] h-full'>
-                <div className='absolute top-[-13%] left-[22%] lg:top-[-30%] md:top-[-21%] md:left-[28%] lg:left-[39%] m-auto md:w-[22rem] md:h-[65vh]'>
-                    <Tilt><img src={Fimg} alt="" width={"100px"} height={"100px"} className='object-cover w-full h-full ' /></Tilt>
+                <div className='absolute top-[-20%]'>
+                    <Nikon3d />
                 </div>
                 <div className='feu absolute lg:top-[20%] lg:left-[30%] md:top-[20%] md:left-[20%] top-[40%] left-[10%]'>
                     <div>FHD</div>

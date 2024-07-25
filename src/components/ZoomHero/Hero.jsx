@@ -31,7 +31,7 @@ import { PiInstagramLogoDuotone } from "react-icons/pi";
 import { AiOutlineProduct } from "react-icons/ai";
 import { BsArrowDownRight } from "react-icons/bs";
 import { TbArrowRightCircle } from "react-icons/tb";
-import { TbArrowLeftCircle } from "react-icons/tb";
+import { TbArrowLeftCircle } from "react-icons/tb"; 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 function Hero() {

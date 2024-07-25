@@ -21,7 +21,8 @@ const ImageSequence = forwardRef(({ progress }, ref) => {
             width: "100%",
             backgroundImage: `url('${item[0] ? item[0].src : null}')`,
             backgroundSize: "cover",
-            backgroundPosition: "center"
+            backgroundPosition: "center",
+            zIndex:1000,
           }}
         />
       ));
