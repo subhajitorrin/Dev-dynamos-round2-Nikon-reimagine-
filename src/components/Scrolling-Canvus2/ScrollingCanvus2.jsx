@@ -7,6 +7,7 @@ function ScrollingCanvus2() {
     const ref = useRef();
     const [overlayOpacity, setOverlayOpacity] = useState(0);
     const [overlayOpacity2nd, setOverlayOpacity2nd] = useState(0);
+    const [overlayOpacity3nd, setOverlayOpacity3nd] = useState(0);
 
     const updateOverlays = (progress) => {
       if (progress > 0 && progress < 0.2) {
@@ -19,6 +20,12 @@ function ScrollingCanvus2() {
         setOverlayOpacity2nd(1);
       } else {
         setOverlayOpacity2nd(0);
+      }
+
+      if (progress > 0.8 && progress < 1) {
+        setOverlayOpacity3nd(1);
+      } else {
+        setOverlayOpacity3nd(0);
       }
     };
   return (
@@ -50,11 +57,25 @@ function ScrollingCanvus2() {
                   textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
                 }}
               >
-                <h1 className="text-3d md:text-[3rem] font-bold text-[3.3rem] uppercase leading-[3.7rem]">
+                <h1 className="text-3d2 md:text-[3rem] font-bold text-[3.3rem] uppercase leading-[3.7rem]">
                   SMOOTH AND COMFORTABLE OPERATION
                 </h1>
-                <p className="text-3d text-2xl font-[600] ml-[5%] opacity-[0.6]">TOUCH-OPERABLE, TILTING, 8-CM/3.2-IN.,</p>
-                <p className="text-3d text-2xl font-[600] ml-[8%] opacity-[0.6]">2359K-DOT MONITOR</p>
+                <p className="text-3d2 text-2xl font-[600] ml-[5%] opacity-[0.6]">TOUCH-OPERABLE, TILTING, 8-CM/3.2-IN.,</p>
+                <p className="text-3d2 text-2xl font-[600] ml-[8%] opacity-[0.6]">2359K-DOT MONITOR</p>
+              </div>
+              <div
+                className="text-overlay absolute top-[55%] left-[5%] md:max-w-[40%] w-full text-gray-300  flex flex-col  items-start justify-start z-[-1]"
+                style={{
+                  opacity: overlayOpacity3nd,
+                  transition: "opacity 0.5s ease",
+                  textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+                }}
+              >
+                <h1 className=" lg:text-[3rem] font-bold text-[2.5rem] uppercase leading-[3.7rem]">
+                  SMOOTH AND COMFORTABLE OPERATION
+                </h1>
+                <p className="text-2xl font-[600] opacity-[0.6]">TOUCH-OPERABLE, TILTING, 8-CM/3.2-IN.,</p>
+                <p className="text-2xl font-[600] opacity-[0.6]">2359K-DOT MONITOR</p>
               </div>
               {updateOverlays(progress)}
             </div>
