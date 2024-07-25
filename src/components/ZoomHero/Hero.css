@@ -122,7 +122,6 @@
 .timer{
    scale: 1.1;
    color: white;
-   transition: all 0.3s ease;
 }
 .timer:hover{
     background-color: #ffdd00;
