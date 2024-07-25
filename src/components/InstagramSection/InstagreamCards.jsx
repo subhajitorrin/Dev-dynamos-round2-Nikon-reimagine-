@@ -7,6 +7,10 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
 function InstagreamCards({ src }) {
+  const text =
+    "A breaker of forms, Coco Capitán's craft is moored in chaos and unexpected beauty.".split(
+      " "
+    );
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -20,6 +24,7 @@ function InstagreamCards({ src }) {
   const ref = useRef(null);
   const mainRef = useRef(null);
   const boxRefs = useRef([]);
+  const splittext = useRef([]);
 
   if (width > 768) {
     useEffect(() => {
@@ -36,6 +41,21 @@ function InstagreamCards({ src }) {
           },
         });
       });
+
+      splittext.current.forEach((item, index) => {
+        gsap.from(item, {
+          opacity: 0,
+          top: -20,
+          stagger: 0.1,
+          scrollTrigger: {
+            trigger: item,
+            start: "top 70%",
+            end: "bottom 50%",
+            scrub: true,
+            // markers: true,
+          },
+        });
+      });
     }, []);
 
     return (
@@ -45,11 +65,11 @@ function InstagreamCards({ src }) {
             <div className="relative w-[650px] h-[800px]">
               <div
                 ref={(el) => (boxRefs.current[0] = el)}
-                className={`absolute h-[550px] w-[400px]  bg-[red] z-[100] `}
-                style={{boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)'}}
+                className={`absolute h-[650px] w-[500px]  bg-[red] z-[100] `}
+                style={{ boxShadow: "2px 2px 10px rgba(0, 0, 0, 0.5)" }}
               >
                 <img
-                  src={src}
+                  src={src[0]}
                   alt=""
                   width={"100%"}
                   height={"100%"}
@@ -58,10 +78,10 @@ function InstagreamCards({ src }) {
               </div>
               <div
                 ref={(el) => (boxRefs.current[1] = el)}
-                className={`absolute h-[520px] top-[20px] w-[400px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
+                className={`absolute h-[650px] w-[500px] top-[20px]  rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
               >
                 <img
-                  src={src}
+                  src={src[1]}
                   alt=""
                   width={"100%"}
                   height={"100%"}
@@ -70,10 +90,10 @@ function InstagreamCards({ src }) {
               </div>
               <div
                 ref={(el) => (boxRefs.current[2] = el)}
-                className={`absolute h-[520px] top-[20px] w-[400px]  rotate-[-3deg] left-[-70px] bg-[yellow] z-[98]`}
+                className={`absolute h-[650px] w-[500px] top-[20px] rotate-[-3deg] left-[-70px] bg-[yellow] z-[98]`}
               >
                 <img
-                  src={src}
+                  src={src[2]}
                   alt=""
                   width={"100%"}
                   height={"100%"}
@@ -84,12 +104,30 @@ function InstagreamCards({ src }) {
           </div>
           <div className="flex items-center justify-center w-[50%]">
             <div className="text-white text-center flex flex-col gap-[1.5rem]">
-              <p className="text-[blue] text-[1vw]">In Focus</p>
-              <p className="font-bold text-[1.5vw] leading-[90%]">
-                A breaker of forms, Coco Capitán’s <br />
-                craft is moored in <br /> chaos and unexpected beauty.
+              <p
+                className="text-[blue] text-[1vw] splitedtextorrin"
+                ref={(el) => (splittext.current[0] = el)}
+              >
+                In Focus
               </p>
-              <p className="text-[1vw]">See her I-2 story</p>
+              <p className="font-bold text-[1.5vw] leading-[90%] w-[600px] text-center">
+                {text.map((item, index) => {
+                  return (
+                    <div
+                      className="inline-block splitedtextorrin"
+                      ref={(el) => (splittext.current[index + 2] = el)}
+                    >
+                      {item}&nbsp;
+                    </div>
+                  );
+                })}
+              </p>
+              <p
+                className="text-[1vw] splitedtextorrin"
+                ref={(el) => (splittext.current[1] = el)}
+              >
+                See her I-2 story
+              </p>
             </div>
           </div>
         </div>

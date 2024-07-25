@@ -43,13 +43,13 @@ function App() {
         <Features />
         <Product />
         {/* <ScrollingCanvus2 /> */}
-        {/* <Accessory /> */}
+        <Accessory />
         <HoverSection />
         <Myswipper />
         <InstagramSection />
         <LowerInstagram /> 
         {/* <ScrollingCanvus3 /> */}
-        {/* <Footer />  */}
+        <Footer /> 
         
       </div>
     </>
