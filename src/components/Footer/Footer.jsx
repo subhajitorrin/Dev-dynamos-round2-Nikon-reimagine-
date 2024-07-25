@@ -167,7 +167,7 @@ const Footer = () => {
     );
   } else {
     return (
-      <div className="py-[3rem] bg-black text-white flex flex-col gap-[2rem] px-[3rem]">
+      <div className="py-[3rem] bg-black text-white flex flex-col gap-[2rem] px-[3rem] border-t border-t-[#ffffff53]">
         <div className="">
           {aboutNikon.map((item, index) => {
             return (

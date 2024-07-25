@@ -1,5 +1,5 @@
-import React, { useEffect, useState ,useRef} from "react";
-import { Navigation, Pagination, A11y ,Mousewheel } from "swiper/modules";
+import React, { useEffect, useState, useRef } from "react";
+import { Navigation, Pagination, A11y, Mousewheel } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
 import "./Myswipper.css";
@@ -11,7 +11,7 @@ const Myswipper = () => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   // const [abhra, setAbhra] = useState(0);
   const SwiperIns = useRef();
-  let abhra = 0
+  let abhra = 0;
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -25,8 +25,6 @@ const Myswipper = () => {
   }, []);
 
   useEffect(() => {
-    
-
     if (windowWidth <= 768) {
       let backslide = document.querySelectorAll(".back_slide");
       backslide.forEach((item) => {
@@ -44,19 +42,17 @@ const Myswipper = () => {
             slide.style.transform = "translateY(0) scale(1)";
             backslide[i].style.scale = 0;
             swiperInstance.update();
-            abhra = 0
-            
+            abhra = 0;
           } else {
             slide.style.transform = "translateY(-15px) scale(1)";
             backslide[i].style.scale = 1;
             swiperInstance.update();
-            abhra = 1
+            abhra = 1;
           }
         });
       });
-    };
-    return () => {
-    };
+    }
+    return () => {};
   }, [windowWidth]);
 
   function handleSlide() {
@@ -67,88 +63,149 @@ const Myswipper = () => {
       item.style.transform = "translateY(0)";
     });
     backslide.forEach((item) => {
-      item.style.scale= 0;
+      item.style.scale = 0;
     });
   }
-  return (
-    <div className="SwipperMain">
- 
-      <Swiper
-        ref={SwiperIns}
-        id="mainswipper"
-        modules={[Navigation, Pagination, A11y , Mousewheel]}
-        spaceBetween={0}
-        mousewheel={{
-          enabled:true,
-          sensitivity: 1,
-          releaseOnEdges:true,
-        }}
-        slidesPerView={3}
-        pagination={{ clickable: false }}
-        scrollbar={false}
-        onSlideChange={handleSlide}
-        slidesOffsetBefore={100}
-        slidesOffsetAfter={600}
-        direction="vertical"
-        centeredSlides={false}
-        breakpoints={{
-          956: {
-            slidesOffsetBefore: 600,
-            direction: "horizontal",
-          },
-          768: {
-            direction: "horizontal",
-          },
-        }}
-      >
-        
-        <SwiperSlide className="mainslide">
-          <div className="slide1 slide"><div className="NewsDate">23 March , 2024</div></div>
-          <div className="back_slide">
-            <div className="BackSlideProductInformation">
-            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
-              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
-          </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="mainslide">
-          <div className="slide2 slide"><div className="NewsDate">23 March , 2024</div></div>
-          <div className="back_slide">
-            <div className="BackSlideProductInformation">
-            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
-              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
-             
+  if (windowWidth > 768) {
+    return (
+      <div className="SwipperMain">
+        <Swiper
+          ref={SwiperIns}
+          id="mainswipper"
+          modules={[Navigation, Pagination, A11y, Mousewheel]}
+          spaceBetween={0}
+          mousewheel={{
+            enabled: true,
+            sensitivity: 1,
+            releaseOnEdges: true,
+          }}
+          slidesPerView={3}
+          pagination={{ clickable: false }}
+          scrollbar={false}
+          onSlideChange={handleSlide}
+          slidesOffsetBefore={100}
+          slidesOffsetAfter={600}
+          direction="vertical"
+          centeredSlides={false}
+          breakpoints={{
+            956: {
+              slidesOffsetBefore: 600,
+              direction: "horizontal",
+            },
+            768: {
+              direction: "horizontal",
+            },
+          }}
+        >
+          <SwiperSlide className="mainslide">
+            <div className="slide1 slide">
+              <div className="NewsDate">23 March , 2024</div>
             </div>
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide className="mainslide">
-          <div className="slide3 slide"><div className="NewsDate">23 March , 2024</div></div>
-          <div className="back_slide">
-            <div className="BackSlideProductInformation">
-            <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
-              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
-             
+            <div className="back_slide">
+              <div className="BackSlideProductInformation">
+                <div className="NewsProduct">
+                  {/* <p>New Delhi, May 23, 2024 </p> */}
+                  Nikon India announces that NIKKOR lenses' production has
+                  reached 120 million as of April 2024. This milestone
+                  highlights Nikon's commitment to quality and innovation,
+                  reinforcing its position as a leading manufacturer in the
+                  photography industry, beginning its process from raw
+                  materials. <a href="">{/* <u>See More</u> */}</a>
+                </div>
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
+          </SwiperSlide>
 
-        <SwiperSlide className="mainslide">
-          <div className="slide4 slide"><div className="NewsDate">23 March , 2024</div></div>
-          <div className="back_slide">
-            <div className="BackSlideProductInformation">
-              <div className="NewsProduct"><p>New Delhi, May 23, 2024 </p>Nikon India Private Ltd. is pleased to announce that the total production of NIKKOR lenses for Nikon interchangeable lens cameras reached 120 million1 as of April, 2024.
-              As one of the world’s few manufacturers that begins its manufacturing process from the <a href=""><u>See More</u></a></div>
-             
+          <SwiperSlide className="mainslide">
+            <div className="slide2 slide scale-[.7]">
+              <div className="NewsDate">23 March , 2024</div>
             </div>
-          </div>
-        </SwiperSlide>
-      {/* <button className="SeeMoreNews -z-1">See More</button> */}
+            <div className="back_slide">
+              <div className="BackSlideProductInformation">
+                <div className="NewsProduct">
+                  {/* <p>New Delhi, May 23, 2024 </p> */}
+                  The Nikkor Z 28-75mm lens offers a versatile zoom range, sharp
+                  optics, fast autofocus, and lightweight design, perfect for
+                  diverse photography. Its advanced features and exceptional
+                  performance make it an ideal choice for both amateur and
+                  professional photographers, ensuring high-quality images in
+                  various conditions. <a href="">{/* <u>See More</u> */}</a>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
 
-      </Swiper>
-    </div>
-  );
+          <SwiperSlide className="mainslide">
+            <div className="slide3 slide">
+              <div className="NewsDate">23 March , 2024</div>
+            </div>
+            <div className="back_slide">
+              <div className="BackSlideProductInformation">
+                <div className="NewsProduct">
+                  {/* <p>New Delhi, May 23, 2024 </p> */}
+                  Nikon cameras offer exceptional image quality, advanced
+                  features, durable build, and user-friendly controls. They
+                  cater to both professionals and enthusiasts, ensuring high
+                  performance and reliability in various shooting conditions.
+                  Whether for everyday use or professional projects, Nikon
+                  delivers impressive results.{" "}
+                  <a href="">{/* <u>See More</u> */}</a>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="mainslide">
+            <div className="slide4 slide">
+              <div className="NewsDate">23 March , 2024</div>
+            </div>
+            <div className="back_slide">
+              <div className="BackSlideProductInformation">
+                <div className="NewsProduct">
+                  {/* <p>New Delhi, May 23, 2024 </p> */}
+                  The Nikon Zf is a retro-styled mirrorless camera that combines
+                  classic design with modern technology. It features a
+                  high-resolution sensor, advanced autofocus, and intuitive
+                  controls. With its stylish aesthetic and powerful performance,
+                  the Zf appeals to both professional photographers and
+                  enthusiasts seeking a vintage feel with contemporary
+                  capabilities. <a href="">{/* <u>See More</u> */}</a>
+                </div>
+              </div>
+            </div>
+          </SwiperSlide>
+          {/* <button className="SeeMoreNews -z-1">See More</button> */}
+        </Swiper>
+      </div>
+    );
+  } else {
+    const items = [
+      {
+        link: "https://res.cloudinary.com/difxhccup/image/upload/v1721903978/441515604_1032382011568932_9098687211715979792_n_atkv2h.jpg",
+        text: "Nikon's large lenses provide exceptional image quality, featuring advanced optics and coatings, ideal for professional photographers seeking superior performance.",
+      },
+      {
+        link: "https://res.cloudinary.com/difxhccup/image/upload/v1721904120/442496411_1025738628899937_385786479782151304_n_y1pcvr.webp",
+        text: "The Nikkor Z 28-75mm lens offers versatile zoom range, sharp optics, fast autofocus, and lightweight design, perfect for diverse photography.",
+      },
+      {
+        link: "https://res.cloudinary.com/difxhccup/image/upload/v1721889766/feature-nikkor-z-28-400mm-nikon-cameras-lenses-accessories_1_kymae2.webp",
+        text: "Nikon cameras deliver outstanding image quality, advanced features, robust build, and intuitive controls, catering to professionals and enthusiasts alike.",
+      },
+    ];
+    return (
+      <div className="w-full mt-[2rem]">
+        {items.map((item, index) => {
+          return (
+            <div className="p-[2rem] min-w-full" key={index}>
+              <img src={item.link} alt="" className="rounded-[10px]" />
+              <p className="text-white text-center py-[1rem]">{item.text}</p>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
 };
 
 export default Myswipper;

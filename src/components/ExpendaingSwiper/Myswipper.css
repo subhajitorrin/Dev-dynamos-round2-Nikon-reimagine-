@@ -99,13 +99,14 @@
 .slide1 {
   background-color: #ff9999;
   /* padding-left: 10rem ; */
-  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721889765/feature-nikkor-120-million-nikon-cameras-lenses-accessories_1_di5ssd.webp");
+  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721903978/441515604_1032382011568932_9098687211715979792_n_atkv2h.jpg");
   background-repeat: no-repeat;
+  background-position-y: -100px;
 }
 
 .slide2 {
   /* background-color: #99ccff; */
-  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721889766/apac-feature-nikon-z6iii-mirrorless-camera-nikon-cameras-lenses-accessories_1_bjwwtv.webp");
+  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721904120/442496411_1025738628899937_385786479782151304_n_y1pcvr.webp");
   
   background-repeat: no-repeat;
 }
@@ -118,7 +119,7 @@
 
 .slide4 {
   background-color: #ffcc99;
-  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721889766/feature-nikkor-z-35mm-mirrorless-lens-nikon-cameras-lenses-accessories_1_rqdlh4.webp");
+  background-image: url("https://res.cloudinary.com/difxhccup/image/upload/v1721904886/434028225_18423705739038134_5103775667510901117_n_ywhvqh.webp");
   background-repeat: no-repeat;
 }
 
