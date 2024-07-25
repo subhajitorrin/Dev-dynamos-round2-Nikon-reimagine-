@@ -13,9 +13,12 @@
 .imgLink{
     width: 90%;
     height: 80%;
-    background-color: blue;
+ /* background-color: red; */
     flex-shrink: 0;
     border-radius: 10px;
+    /* object-fit: contain; */
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .DetailsProduct{
     font-weight: bolder;

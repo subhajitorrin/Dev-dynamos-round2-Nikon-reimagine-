@@ -31,21 +31,33 @@ function Accessory() {
       prodList: [
         {
           Name: "yo",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900648/1_gowkju.webp",
         },
         {
           Name: "yo1",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900644/2_t4lodg.webp",
         },
         {
           Name: "yo2",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900644/3_rnbeof.webp",
         },
         {
           Name: "yo3",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900643/5_cqrvvb.webp",
         },
         {
           Name: "yo4",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900643/4_ewvffz.webp",
         },
         {
           Name: "yo5",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900643/6_xho3um.webp",
         },
       ],
     },
@@ -54,21 +66,33 @@ function Accessory() {
       prodList: [
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/5_qag3ej.webp",
         },
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/1_nkrqxe.webp",
         },
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/2_mod3i0.webp",
         },
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900632/3_ajlc9m.webp",
         },
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900631/4_ctpgsq.webp",
         },
         {
           Name: "bro",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721900631/6_lmkfkz.webp",
         },
       ],
     },
@@ -77,21 +101,33 @@ function Accessory() {
       prodList: [
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904007/s-l400-removebg-preview_olj5vf.webp",
         },
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904006/representative-25837-ChTdBUH__gl5j6s.webp",
         },
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904004/nikon-camera-lithium-ion-battery-removebg-preview_yeg2bw.webp",
         },
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904002/nikon-battery-500x500_ttnzau.webp",
         },
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904001/images-removebg-preview_nbhv5l.webp",
         },
         {
           Name: "goat",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721904001/17f176732449e726df1353649d7b5144-removebg-preview_yr11d1.webp",
         },
       ],
     },
@@ -100,21 +136,33 @@ function Accessory() {
       prodList: [
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905690/vea006ec-mh-24-battery-charger_storeimage-depositphotos-bgremover_ycqyw2.png",
         },
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905687/nikon-mh-24-original-imafjjtqgyzrcyhn-depositphotos-bgremover_zvvned.webp",
         },
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905685/mh_33-grey-depositphotos-bgremover_qwdcwt.webp",
         },
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905684/images-depositphotos-bgremover_j5j60q.webp",
         },
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905686/mh23-depositphotos-bgremover_nvybgg.webp",
         },
         {
           Name: "tiger",
+          bgimg:
+            "https://res.cloudinary.com/difxhccup/image/upload/v1721905690/vea006ec-mh-24-battery-charger_storeimage-depositphotos-bgremover_ycqyw2.png",
         },
       ],
     },
@@ -281,6 +329,36 @@ function Accessory() {
           });
       });
     }, []);
+    useEffect(() => {
+      const lineoverlay = document.querySelectorAll(".lineoverlay");
+      const heading = document.querySelectorAll(".Heading");
+      console.log(lineoverlay);
+
+      heading.forEach((item, index) => {
+        console.log(item);
+        item.addEventListener("click", () => {
+          lineoverlay[index].style.width = "100%";
+          lineoverlay[index].style.height = "5%";
+        });
+      });
+
+      // heading.forEach((item,index) => {
+      //   console.log(item);
+      //   item.addEventListener("mouseleave", () => {
+      //     lineoverlay[index].style.width="0%";
+      //     lineoverlay[index].style.height="0%";
+      //   });
+      // });
+
+      return () => {
+        heading.forEach((item, index) => {
+          item.removeEventListener("click", () => {
+            lineoverlay[index].style.width = "100%";
+            lineoverlay[index].style.height = "5%";
+          });
+        });
+      };
+    }, []);
     return (
       <>
         <div className="NikonWrapAcess">
@@ -289,36 +367,54 @@ function Accessory() {
               <IoMdClose className="CloseAccessoryList" />
               <span className="Heading">
                 <summary>
-                  <div className="overlay"></div>
+                  <div className="lineoverlay" defaultValue={false}></div>
                   Speedlight
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay"></div>
+                  <div className="lineoverlay" defaultValue={false}></div>
                   Filter
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay"></div>
+                  <div className="lineoverlay" defaultValue={false}></div>
                   Battery
                 </summary>
               </span>
               <span className="Heading">
                 <summary>
-                  <div className="overlay"></div>
+                  <div className="lineoverlay" defaultValue={false}></div>
                   Charger
                 </summary>
               </span>
             </div>
             <div className="ImgDetail">
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[0].Name} />
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[1].Name} />
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[2].Name} />
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[3].Name} />
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[4].Name} />
-              <AccessoryProduct Name={ListArr[listArrIndex].prodList[5].Name} />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[0].Name}
+                bgimg={ListArr[listArrIndex].prodList[0].bgimg}
+              />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[1].Name}
+                bgimg={ListArr[listArrIndex].prodList[1].bgimg}
+              />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[2].Name}
+                bgimg={ListArr[listArrIndex].prodList[2].bgimg}
+              />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[3].Name}
+                bgimg={ListArr[listArrIndex].prodList[3].bgimg}
+              />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[4].Name}
+                bgimg={ListArr[listArrIndex].prodList[4].bgimg}
+              />
+              <AccessoryProduct
+                Name={ListArr[listArrIndex].prodList[5].Name}
+                bgimg={ListArr[listArrIndex].prodList[5].bgimg}
+              />
             </div>
           </div>
           <div className="CameraImg" id="CameraImg">
