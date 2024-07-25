@@ -31,7 +31,28 @@
   }
 }
 
+.text-overlay:hover .text-3d {
+  /* pointer-events: none; */
+  transform: perspective(500px) rotateY(0deg) rotateX(0deg);
+}
 .text-3d {
+  --shadow-color: #000;
+  --shadow-size: 1px;
+  text-shadow: var(--shadow-size) var(--shadow-size) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 2) calc(var(--shadow-size) * 2) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 3) calc(var(--shadow-size) * 3) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 4) calc(var(--shadow-size) * 4) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 5) calc(var(--shadow-size) * 5) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 6) calc(var(--shadow-size) * 6) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 7) calc(var(--shadow-size) * 7) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 8) calc(var(--shadow-size) * 8) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 9) calc(var(--shadow-size) * 9) 0 var(--shadow-color),
+               calc(var(--shadow-size) * 10) calc(var(--shadow-size) * 10) 0 var(--shadow-color);
+  transform: perspective(500px) rotateY(20deg) rotateX(0deg);
+  transition: transform 0.5s;
+  display: inline-block;
+}
+.text-3d2 {
   --shadow-color: #000;
   --shadow-size: 1px;
   text-shadow: var(--shadow-size) var(--shadow-size) 0 var(--shadow-color),
