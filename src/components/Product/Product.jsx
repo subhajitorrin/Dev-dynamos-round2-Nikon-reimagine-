@@ -113,13 +113,11 @@ const Product = () => {
     );
   } else {
     return (
-      <div className="overflow-x-auto relative ">
+      <div className="overflow-x-auto relative  h-screen flex items-center scrollhide">
         <div className="flex p-[4rem]  w-[1740px] gap-[2rem]">
-          {
-            imglist.map((item,index)=>{
-              return <Card src={item} name={product_info[5].name} />
-            })
-          }
+          {imglist.map((item, index) => {
+            return <Card src={item} name={product_info[5].name} />;
+          })}
         </div>
       </div>
     );
