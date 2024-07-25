@@ -31,7 +31,7 @@ function ScrollingCanvus1() {
           {(progress) => (
             <div style={{ height: "100vh", position: "relative" }}>
               <Sequence ref={ref} progress={progress} />
-              <div
+              {/* <div
                 className="text-overlay absolute md:top-[20%] top-[10%] md:left-[10%] left-[7%] md:max-w-md w-full text-white flex flex-col items-start justify-start "
                 style={{
                   opacity: overlayOpacity,
@@ -43,8 +43,8 @@ function ScrollingCanvus1() {
                 <h1 className="text-3d md:text-[5rem] text-[3.5rem] font-bold uppercase flex flex-wrap md:leading-[5.5rem] leading-[3.7rem]">
                   <span>Every</span> <span>angle</span> <span>Covered</span>
                 </h1>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="text-overlay absolute top-[45%] left-[0%] w-full text-gray-300"
                 style={{
                   opacity: overlayOpacity2nd,
@@ -54,7 +54,7 @@ function ScrollingCanvus1() {
               >
                 <h1 className="md:text-[8rem] text-[3.3rem] font-bold uppercase leading-[3.7rem]">Ignite your passion
                 </h1>
-              </div>
+              </div> */}
               {updateOverlays(progress)}
             </div>
           )}

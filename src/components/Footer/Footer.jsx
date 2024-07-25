@@ -69,13 +69,15 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className="FooterContainer m-0 max-h-[65vh] w-full flex flex-col items-center gap-5 justify-center relative z-[999999] pt-5 bg-orange-700 box-border">
+    <div className="FooterContainer m-0 max-h-[65vh] w-full flex flex-col items-center gap-5 justify-center relative z-[999999] pt-5 bg-transparent box-border">
       <div className="footertop flex items-center justify-center gap-10">
         <ul>
           {aboutNikon.map((item, index) => (
             <li
               key={index}
-              className={`text-white ${index === 0 ? "font-bold text-[18px] pb-3" : ""}`}
+              className={`text-white ${
+                index === 0 ? "font-bold text-[18px] pb-3" : ""
+              }`}
             >
               {item}
             </li>
@@ -85,7 +87,9 @@ const Footer = () => {
           {ToolsAndDownloads.map((item, index) => (
             <li
               key={index}
-              className={`text-white ${index === 0 ? "font-bold text-[18px] pb-3" : ""}`}
+              className={`text-white ${
+                index === 0 ? "font-bold text-[18px] pb-3" : ""
+              }`}
             >
               {item}
             </li>
@@ -110,28 +114,38 @@ const Footer = () => {
         <div className="flex gap-[5rem]">
           <div className="flex items-center gap-4">
             <FaFacebookF className="text-black text-[35px] p-1.5  rounded-[12px] bg-white" />
-            <span className="text-white tracking-[0.3rem] text-[20px]">FACEBOOK</span>
+            <span className="text-white tracking-[0.3rem] text-[20px]">
+              FACEBOOK
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
             <FaInstagram className="text-black text-[35px] p-1.5  rounded-[12px] bg-white" />
-            <span className="text-white tracking-[0.3rem] text-[20px]">INSTAGRAM</span>
+            <span className="text-white tracking-[0.3rem] text-[20px]">
+              INSTAGRAM
+            </span>
           </div>
 
           <div className="flex items-center gap-4">
             <FaYoutube className="text-black text-[35px] p-1.5  rounded-[12px] bg-white" />
-            <span className="text-white tracking-[0.3rem] text-[20px]">YOUTUBE</span>
+            <span className="text-white tracking-[0.3rem] text-[20px]">
+              YOUTUBE
+            </span>
           </div>
         </div>
 
         <div className="flex gap-[2rem]">
           <div className="flex items-center gap-4">
             <FaLinkedinIn className="text-black text-[35px] p-1.5  rounded-[12px] bg-white" />
-            <span className="text-white tracking-[0.3rem] text-[18px]">LINEDIN</span>
+            <span className="text-white tracking-[0.3rem] text-[18px]">
+              LINEDIN
+            </span>
           </div>
           <div className="flex items-center gap-4">
             <FaTwitter className="text-black text-[35px] p-1.5  rounded-[12px] bg-white" />
-            <span className="text-white tracking-[0.3rem] text-[18px]">X(FORMERLY TWITTER)</span>
+            <span className="text-white tracking-[0.3rem] text-[18px]">
+              X(FORMERLY TWITTER)
+            </span>
           </div>
         </div>
       </div>

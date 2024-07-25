@@ -14,6 +14,7 @@ import LowerInstagram from "./components/LowerInstagramSection/LowerInstagram";
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import TopNavbar from "./components/Navbar/TopNavbar";
+import HoverSection from "./components/HoverSection/HoverSection";
 function App() {
   const [scroll, setscroll] = useState(window.scrollY);
 
@@ -34,19 +35,20 @@ function App() {
     <>
       <div className="bg-[#010413]">
         <StarsCanvas />
-        <Navbar scroll={scroll}/> 
-        <TopNavbar scroll={scroll}/>
+        <Navbar scroll={scroll} />
+        <TopNavbar scroll={scroll} />
         <Hero />
         <ScrollingCanvus1 />
         <Features />
         <Product />
         <ScrollingCanvus2 />
         <Accessory />
+        <HoverSection />
         <Myswipper />
         <InstagramSection />
         <LowerInstagram />
-        <ScrollingCanvus3 />
-        {/* <Footer /> */}
+        {/* <ScrollingCanvus3 /> */}
+        <Footer />
       </div>
     </>
   );

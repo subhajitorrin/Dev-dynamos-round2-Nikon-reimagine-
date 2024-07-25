@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
-function InstagreamCards({src}) {
+function InstagreamCards({ src }) {
   const [width, setWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -45,21 +45,40 @@ function InstagreamCards({src}) {
             <div className="relative w-[650px] h-[800px]">
               <div
                 ref={(el) => (boxRefs.current[0] = el)}
-                className={`absolute h-[750px] w-[600px]  bg-[red] z-[100]`}
+                className={`absolute h-[550px] w-[400px]  bg-[red] z-[100] `}
+                style={{boxShadow: '2px 2px 10px rgba(0, 0, 0, 0.5)'}}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
               <div
                 ref={(el) => (boxRefs.current[1] = el)}
-                className={`absolute h-[720px] top-[20px] w-[600px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
+                className={`absolute h-[520px] top-[20px] w-[400px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
               <div
                 ref={(el) => (boxRefs.current[2] = el)}
-                className={`absolute h-[720px] top-[20px] w-[600px]  rotate-[-3deg] left-[-70px] bg-[yellow] z-[98]`}
+                className={`absolute h-[520px] top-[20px] w-[400px]  rotate-[-3deg] left-[-70px] bg-[yellow] z-[98]`}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
             </div>
           </div>
@@ -82,7 +101,7 @@ function InstagreamCards({src}) {
         gsap.from(element, {
           rotate: 0,
           left: 0,
-          top:0,
+          top: 0,
           scrollTrigger: {
             trigger: element,
             start: "top 50%",
@@ -96,8 +115,11 @@ function InstagreamCards({src}) {
 
     return (
       <div className="" ref={ref}>
-        <div className="h-screen flex px-[5vw] flex-col  justify-center  gap-[5rem]" ref={mainRef}>
-        <div className="flex items-center justify-center w-[100%]">
+        <div
+          className="h-screen flex px-[5vw] flex-col  justify-center  gap-[5rem]"
+          ref={mainRef}
+        >
+          <div className="flex items-center justify-center w-[100%]">
             <div className="text-white text-center flex flex-col gap-[1.5rem]">
               <p className="text-[blue] text-[1vw]">In Focus</p>
               <p className="font-bold text-[4vw] leading-[90%]">
@@ -108,28 +130,45 @@ function InstagreamCards({src}) {
             </div>
           </div>
           <div className="w-[100%] flex items-center justify-center ">
-            <div className="relative w-[100%] h-[600px] ">
+            <div className="relative w-[100%] h-[600px]">
               <div
                 ref={(el) => (boxRefs.current[0] = el)}
-                className={`absolute h-[500px] w-[70vw]  bg-[red] z-[100] left-[50px]`}
+                className={`absolute h-[500px] w-[300px]  bg-[red] z-[100] left-[50px]`}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
               <div
                 ref={(el) => (boxRefs.current[1] = el)}
-                className={`absolute h-[500px] w-[70vw] top-[-30px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
+                className={`absolute h-[500px] w-[300px] top-[-30px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
               <div
                 ref={(el) => (boxRefs.current[2] = el)}
-                className={`absolute h-[500px] w-[70vw] top-[40px]  rotate-[-3deg] left-[10px] bg-[yellow] z-[98]`}
+                className={`absolute h-[500px] w-[300px] top-[40px]  rotate-[-3deg] left-[10px] bg-[yellow] z-[98]`}
               >
-                <img src={src} alt="" width={"100%"} height={"100%"} className="object-cover w-full h-full "/>
+                <img
+                  src={src}
+                  alt=""
+                  width={"100%"}
+                  height={"100%"}
+                  className="object-cover w-full h-full "
+                />
               </div>
             </div>
           </div>
-          
         </div>
       </div>
     );
