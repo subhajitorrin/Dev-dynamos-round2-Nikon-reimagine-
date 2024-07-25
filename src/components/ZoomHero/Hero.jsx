@@ -28,7 +28,7 @@ import { PiInstagramLogoDuotone } from "react-icons/pi";
 import { AiOutlineProduct } from "react-icons/ai";
 import { BsArrowDownRight } from "react-icons/bs";
 import { TbArrowRightCircle } from "react-icons/tb";
-import { TbArrowMoveLeft } from "react-icons/tb";
+import { TbArrowLeftCircle } from "react-icons/tb";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 function Hero() {
@@ -67,7 +67,7 @@ function Hero() {
       borderRadius:2,
     },[0])
     .to(".innerdiv",{
-      height:"95%",
+      height:"96%",
       display:"flex",
       width:"98%",
       borderRadius:2,
@@ -106,44 +106,59 @@ function Hero() {
             <Swiper
             className="InnerSwiper relative"
             modules={[Navigation, Pagination, Scrollbar, A11y,Mousewheel]}
-            mousewheel={{
-          enabled:true,
-          sensitivity: 1,
-          releaseOnEdges:true,
+          //   mousewheel={{
+          // enabled:true,
+          // sensitivity: 1,
+          // releaseOnEdges:true,
+          //   }}
+            navigation={{
+              nextEl:".nextArr",
+              prevEl:".prevArr",
             }}
-            navigation={true}
+            oneWayMovement={false}
             slidesPerView={1}
             spaceBetween={0}
+            centeredSlides={true}
             >
               <div className='scroll-down items-center flex flex-col gap-[0px] border  p-[1rem] absolute'>
                     <div className=''><RiScrollToBottomLine className='w-[30px] h-[30px]' /></div>
                     <h3 className='opacity-[0.7]'>Scroll</h3>
                     <div><IoPlaySharp className='transform rotate-90' /></div>
                 </div>
-               <TbArrowRightCircle />
-               <TbArrowMoveLeft />
+               <TbArrowRightCircle className=" nextArr absolute z-40 top-[15%] left-[25%] scale-[10]"/>
+               <TbArrowLeftCircle  className=" prevArr absolute z-40 top-[25%] left-[20%] scale-[10]"/>
               <SwiperSlide className="Slide">
-                <div className="w-[70%] h-[80%] bg-slate-500 flex items-center justify-center relative overflow-hidden">
+                <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative ">
                   <img className="SwiperCamera" src={Img} alt="" />
-                  <span className="model">MODEL</span>
-                  <span className="absolute bottom-0 text-2xl">MOdel Name<span className=" text-8xl">|</span>Price</span>
+                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
+                  <button className="BuyNow">BUY NOW</button>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
-              <div className="w-[70%] h-[70%] bg-slate-500"></div>
+              <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
+                  <img className="SwiperCamera" src={Img} alt="" />
+                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
+                </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
-              <div className="w-[70%] h-[70%] bg-slate-500"></div>
+              <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
+                  <img className="SwiperCamera" src={Img} alt="" />
+                  <span className="absolute  text-2xl model">MOdel Name<span className=" text-4xl">|</span>Price</span>
+                </div>
               </SwiperSlide>
               <SwiperSlide className="Slide">
-              <div className="w-[70%] h-[70%] bg-slate-500"></div>
+              <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
+                  <img className="SwiperCamera" src={Img} alt="" />
+                  <span className="absolute model text-2xl">MOdel Name<span className=" text-4xl">|</span>Price</span>
+
+                </div>
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
-        <div className='absolute  left-[-50%] mr-[2rem] p-[1.5rem] hidden lg:flex flex-col gap-[1rem] items-center justify-center z-[100000] timer-slider'>
+        <div className='absolute  left-[-50%] mr-[2rem]  hidden lg:flex flex-col gap-[1rem] items-center justify-center z-[100000] timer-slider'>
                 <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
-                    <div className='absolute bg-transparent w-[80%] h-[80%] rounded-full '></div><MdOutlineHomeMax className='w-[60%] h-[80%] z-[100] text-white' />
+                    <div className='absolute bg-transparent w-[80%] h-[80%] rounded-full '></div><MdOutlineHomeMax className='w-[60%] h-[80%] z-[100]' />
                 </div>
                 <div className='relative border border-gray-500 w-[50px] h-[50px] rounded-[50%] bg-transparent flex items-center justify-center timer'>
                 <SiCanvas className='w-[60%] h-[80%]' />

@@ -35,23 +35,24 @@
     height: 10rem;
 }
 .zoomingdiv{
-    width: 50px;
-    height: 50px;
-    background-color: orange;
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
     position: absolute;
     border-radius: 100%;
-    display: none;
+    /* display: none; */
     align-items: center;
     justify-content:center;
-    transform: translateX(40%) translateY(40%);
+    transform: translateX(45%) translateY(45%);
 }
 .innerdiv{
+    background-color: #ffdd00;
     flex-shrink: 0;
     width: 0%;
     height: 0%;
     border-radius: 100%;
-    background-color: rgb(103, 202, 16);
     display: none;
+    background: radial-gradient(circle,rgb(255, 255,rgb(0, 0, 0)),blue,orange);
 }
 .delay{
     width: 0%;
@@ -71,7 +72,6 @@
 }
 .InnerSwiper{
     flex-shrink: 0;
-    background-color: rgb(178, 94, 94);
     width: 100% !important;
     height: 100% !important;
     display: flex !important;
@@ -83,10 +83,11 @@
     flex-shrink: 0;
     width: 100% !important;
     height: 100% !important;
-    /* background-color: blue; */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    anchor-name: --el-anchor;
+    position: relative;
 }
 .SwiperCamera{
    aspect-ratio: 1/1;
@@ -102,18 +103,18 @@
     animation-play-state: running;
 }
 .model{
-    position: absolute;
-    z-index: 1;
-    font-size: 20rem;
-    user-select: none;
+    position-anchor: --el-anchor !important;
+    bottom: 0px;
 }
 .timer-slider{
     backdrop-filter: blur(100px);
     background: transparent;
-   height: 60%;
+   height: 55%;
    border-radius: 50px !important;
    gap:3rem !important;
-   border: 3px solid rgba(220, 20, 60, 0.52);
+   border: 2px solid #ffdd00b9;
+   padding-left: 1rem;
+   padding-right: 1rem;
 }
 .timer{
    scale: 1.1;
@@ -121,7 +122,8 @@
    transition: all 0.3s ease;
 }
 .timer:hover{
-    background:radial-gradient(blue,skyblue);
+    background-color: #ffdd00;
+    color: black;
     scale: 1.2;
 }
 @keyframes floating {
@@ -136,9 +138,23 @@
     }
 }
 .scroll-down{
-    height:min-content;
-    background-color: skyblue;
-    border-radius: 50px;
     bottom: 1rem;
     right: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 20px;
+    border: 5px solid black;
+    color:rgb(0, 0, 0);
+    font-weight: bolder;
+}
+.BuyNow{
+    position: absolute;
+    bottom: -80px;
+    background-color: orangered;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    scale: 2;
+    border-radius: 30px;
 }
