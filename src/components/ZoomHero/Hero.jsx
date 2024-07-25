@@ -53,11 +53,15 @@ function Hero() {
     },[0])
     .to(".NIK",{
       perspective:100,
-      transform:"translateZ(76px)"
+      transform:"translateZ(79px)",
+      color:"#ffdd00",
+      webkitTextStroke: "0px #ffdd00",
     },[0])
     .to(".ON",{
       perspective:100,
-      transform:"translateZ(65px)"
+      transform:"translateZ(65px)",
+      color:"#ffdd00",
+      webkitTextStroke: "0px #ffdd00",
     },[0]).to(".CameraSvg",{
       perspective:100,
       transform:"translateZ(65px)"
@@ -100,9 +104,9 @@ function Hero() {
         <div className=" wrapDiv w-full h-full bg-transparent z-40">
       <div className="mainHero">
         <div className="delay"></div>
-        <span className="NIK">NIK</span>
+        <span className="NIK golos">NIK</span>
         <img className="CameraSvg" src={CameraSvg} alt=""></img>
-        <span className="ON">N</span>
+        <span className="ON golos">N</span>
         <div className="space"></div>
         <div className="zoomingdiv">
           <div className="innerdiv">
