@@ -370,7 +370,9 @@ function Accessory() {
         <div className="NikonWrapAcess">
           <div className="DetailsofAccessory">
             <div className="listDetail">
-              <IoMdClose className="CloseAccessoryList" />
+              <div className="span" onClick={() => setisactiveunderliine(null)}>
+                <IoMdClose className="CloseAccessoryList" />
+              </div>
               {titles.map((title, index) => (
                 <span
                   key={title}
