@@ -50,7 +50,7 @@ function Hero() {
         start: "0.1% 0%",
         end: "90% 0%",
         scrub: 2,
-        markers: true,
+        // markers: true,
         scroller: "body",
         pin: ".wrapDiv",
         pinSpacing: false,

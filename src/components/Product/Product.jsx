@@ -42,7 +42,7 @@ const Product = () => {
         start: "5% 0%",
         end: "20% 5%",
         scrub: 1,
-        markers: true,
+        // markers: true,
         scroller: "body",
         pin: true,
       },
