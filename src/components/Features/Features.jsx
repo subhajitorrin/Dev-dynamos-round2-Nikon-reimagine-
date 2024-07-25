@@ -3,6 +3,7 @@ import './Features.css'
 import Tilt from 'react-parallax-tilt';
 import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Nikon3d from './Nikon3d';
 
 import Fimg from '../../assets/featureImg1.png';
 import Trus1 from '../../assets/trusted1.png';
@@ -57,17 +58,17 @@ const Features = () => {
 
     return (
         <div className='w-full md:h-[125vh] h-[80vh] bg-transparent relative text-white lg:p-[2rem]'>
-            <div ref={FeatureRef} className='flex flex-col items-center lg:pl-[10rem] lg:pr-[10rem] w-full'>
-                <h2 className='text-4xl font-[600] mb-[10px]'>Best Selling Camera</h2>
-                <p className='md:w-[70%] text-center opacity-[0.7] text-[12px] md:text-[15px]'>Elievate your photography game with our range of professionals grade cameras and accessories capture every moment with our high-quality cameras and lenses</p>
+            <div ref={FeatureRef} className='flex flex-col gap-3 items-center lg:pl-[10rem] lg:pr-[10rem] w-full'>
+                <h2 className='text-6xl font-[600] mb-[10px] '>Best Selling Camera</h2>
+                <p className='md:w-[70%] text-center opacity-[1] text-[10px] md:text-[15px]'>Elievate your photography game with our range of professionals grade cameras and accessories capture every moment with our high-quality cameras and lenses</p>
 
                 <div className='feature mt-[2rem] relative text-[4rem] lg:text-[10rem] md:text-[6rem] w-full flex items-center justify-center lg:ml-[1.5rem]'>
                     <h1 className='gradiant-feature font-[550]'>FEATURE</h1>
                 </div>
             </div>
             <div className='camera-features-container w-full relative md:h-[60vh] h-full'>
-                <div className='absolute top-[-13%] left-[22%] lg:top-[-30%] md:top-[-21%] md:left-[28%] lg:left-[39%] m-auto md:w-[22rem] md:h-[65vh]'>
-                    <Tilt><img src={Fimg} alt="" width={"100px"} height={"100px"} className='object-cover w-full h-full ' /></Tilt>
+                <div className='absolute top-[-20%]'>
+                    <Nikon3d />
                 </div>
                 <div className='feu absolute lg:top-[20%] lg:left-[30%] md:top-[20%] md:left-[20%] top-[40%] left-[10%]'>
                     <div>FHD</div>

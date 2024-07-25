@@ -70,7 +70,7 @@ const Product = () => {
     return (
       <div className=" CategoryProduct w-full bg-transparent relative md:p-[2rem] md:mt-[4rem] p-[1rem] text-white">
         <div className="header-product w-full flex flex-col  ">
-          <h1 className="lg:text-[10rem] font-[500] text-center gradiant-feature">
+          <h1 className="lg:text-[10rem]  text-center gradiant-feature alfa">
             CATEGORY
           </h1>
           <button className="ml-[2rem] button">

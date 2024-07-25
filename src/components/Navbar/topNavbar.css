@@ -10,7 +10,7 @@
   background-color: rgba(245, 245, 245, 0.119);
   border-radius: 30px;
   transition: all 0.3s ease;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .TopNavIcon:hover {
   scale: 0.95;
