@@ -11,13 +11,19 @@ const Img3 =
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import CameraSvg from "./lens.svg"
-import { Navigation, Pagination, Scrollbar, A11y, Mousewheel } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import CameraSvg from "./DSLR_Camera_REMIX_By_DG-RA.svg";
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Mousewheel,
+} from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 
 // import {
 //   Navigation,
@@ -31,7 +37,6 @@ import 'swiper/css/scrollbar';
 // import "swiper/css/navigation";
 // import "swiper/css/pagination";
 // import "swiper/css/scrollbar";
-
 
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
@@ -48,6 +53,8 @@ import { AiOutlineProduct } from "react-icons/ai";
 import { BsArrowDownRight } from "react-icons/bs";
 import { TbArrowRightCircle } from "react-icons/tb";
 import { TbArrowLeftCircle } from "react-icons/tb";
+import { FaStar } from "react-icons/fa";
+import { IoIosStarHalf } from "react-icons/io";
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 function Hero() {
@@ -189,6 +196,9 @@ function Hero() {
                 slidesPerView={1}
                 spaceBetween={0}
                 centeredSlides={true}
+                pagination={{
+                  enabled: true,
+                }}
               >
                 <div className="scroll-down items-center flex flex-col gap-[0px] border  p-[1rem] absolute">
                   <div className="">
@@ -196,12 +206,22 @@ function Hero() {
                   </div>
                   <h3 className="opacity-[0.7]">Scroll</h3>
                   <div>
-                    <IoPlaySharp className="transform rotate-90" />
+                    <IoPlaySharp className="transform rotate-90" /> 
                   </div>
                 </div>
                 <TbArrowRightCircle className=" nextArr absolute z-40 top-[15%] left-[25%] scale-[10]" />
                 <TbArrowLeftCircle className=" prevArr absolute z-40 top-[25%] left-[20%] scale-[10]" />
                 <SwiperSlide className="Slide">
+                  <span className="absolute w-[400px] top-[15%] right-[5%] model text-2xl">
+                  For capturing the most electrifying of moments during high speed sports and action, the Z6 can shoot a remarkable 14 fps for up to 200 continuous shots at JPEG fine quality*.
+                  </span>
+                  <span className="absolute w-[400px] bottom-[15%] left-[5%] model text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <IoIosStarHalf />
+                  </span>
                   <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative ">
                     <img className="SwiperCamera" src={Img} alt="" />
                     <span className="absolute model text-2xl">
@@ -209,9 +229,20 @@ function Hero() {
                       <span className=" text-6xl ml-1 mr-1">|</span>MRP Rs. 2 92
                       990.00
                     </span>
+                    
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="Slide">
+                  <span className="absolute w-[400px] top-[15%] right-[5%] model text-2xl">
+                  For reliable subject acquisition around distracting foreground objects like a net, player or other obstacle, sports photographers will find the z6 selectable group Area AF patterns indispensable.
+                  </span>
+                  <span className="absolute w-[400px] bottom-[15%] left-[5%] model text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <IoIosStarHalf />
+                  </span>
                   <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                     <img className="SwiperCamera" src={Img1} alt="" />
                     <span className="absolute model text-2xl">
@@ -222,6 +253,23 @@ function Hero() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="Slide">
+                  <span className="absolute w-[400px] top-[15%] right-[5%] model text-2xl">
+                    Advanced scene recognition for intelligent exposure.
+                  </span>
+                  <span className="absolute w-[400px] bottom-[15%] left-[5%] model text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <IoIosStarHalf />
+                  </span>
+                  <span className="absolute w-[400px] bottom-[15%] left-[5%] model text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <IoIosStarHalf />
+                  </span>
                   <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                     <img className="SwiperCamera" src={Img2} alt="" />
                     <span className="absolute  text-2xl model">
@@ -232,6 +280,16 @@ function Hero() {
                   </div>
                 </SwiperSlide>
                 <SwiperSlide className="Slide relative">
+                  <span className="absolute w-[400px] top-[15%] right-[5%] model text-2xl">
+                  Astounding 60 fps stills in video mode.
+                  </span>
+                  <span className="absolute w-[400px] bottom-[15%] left-[5%] model text-2xl">
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <IoIosStarHalf />
+                  </span>
                   <div className="w-[70%] h-[80%] SwiperDiv flex items-center justify-center relative overflow-hidden">
                     <img className="SwiperCamera" src={Img3} alt="" />
                     <span className="absolute model text-2xl">
