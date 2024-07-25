@@ -60,7 +60,7 @@ function Navbar({ scroll }) {
         {isNavActive ? (
           <div
             onClick={() => setIsNavActive(false)}
-            className="fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
+            className="fixed top-[20px] right-[20px] z-[99999999999] text-white cursor-pointer text-[30px] navicon"
           >
             <RxCross1 />
           </div>
