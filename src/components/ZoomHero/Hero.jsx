@@ -206,7 +206,7 @@ function Hero() {
                   </div>
                   <h3 className="opacity-[0.7]">Scroll</h3>
                   <div>
-                    <IoPlaySharp className="transform rotate-90" />
+                    <IoPlaySharp className="transform rotate-90" /> 
                   </div>
                 </div>
                 <TbArrowRightCircle className=" nextArr absolute z-40 top-[15%] left-[25%] scale-[10]" />

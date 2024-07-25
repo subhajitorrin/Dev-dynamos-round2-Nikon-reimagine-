@@ -1,0 +1,29 @@
+.LoaderImg {
+  aspect-ratio: 1/1;
+  width: 200px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.LoaderNik {
+  flex-shrink: 0;
+  font-size: 10rem;
+  color: transparent;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffdd00;
+}
+.LoaderOn {
+  flex-shrink: 0;
+  font-size: 10rem;
+  -webkit-text-stroke: 1px #ffffff;
+  text-stroke: 1px #ffdd00;
+  color: transparent;
+}
+
+.textaniorrin:hover {
+  background-color: white;
+  color: black;
+  transition: all linear 0.3s;
+}
+.textaniorrin {
+  transition: all linear 0.3s;
+}

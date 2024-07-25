@@ -17,6 +17,7 @@ import Navbar from "./components/Navbar/Navbar";
 import TopNavbar from "./components/Navbar/TopNavbar";
 import HoverSection from "./components/HoverSection/HoverSection";
 import HeroMobile from "./components/MobileHero/HeroMobile";
+import LoaderPage from "./components/Loader/Loaderpage";
 function App() {
   const [scroll, setscroll] = useState(window.scrollY);
 
@@ -47,6 +48,7 @@ function App() {
   return (
     <>
       <div className="bg-[#010413]">
+        <LoaderPage />
         <StarsCanvas />
         <Navbar scroll={scroll} />
         <TopNavbar scroll={scroll} />
@@ -55,7 +57,7 @@ function App() {
             <Hero /> <div className=" w-screen h-screen bg-transparent"></div>
           </>
         ) : (
-          <HeroMobile/>
+          <HeroMobile />
         )}
         <ScrollingCanvus1 />
         <Features />
