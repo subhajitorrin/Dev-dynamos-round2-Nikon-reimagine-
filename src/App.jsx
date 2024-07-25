@@ -16,6 +16,7 @@ import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import TopNavbar from "./components/Navbar/TopNavbar";
 import HoverSection from "./components/HoverSection/HoverSection";
+import HeroMobile from "./components/MobileHero/HeroMobile";
 function App() {
   const [scroll, setscroll] = useState(window.scrollY);
 
@@ -32,14 +33,30 @@ function App() {
     };
   }, []);
 
+  const [width, setWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    function handleresize() {
+      setWidth(window.innerWidth);
+    }
+    document.addEventListener("resize", handleresize);
+    return () => {
+      document.removeEventListener("resize", handleresize);
+    };
+  }, []);
+
   return (
     <>
       <div className="bg-[#010413]">
         <StarsCanvas />
         <Navbar scroll={scroll} />
         <TopNavbar scroll={scroll} />
-        <Hero />
-        <div className=" w-screen h-screen bg-transparent"></div>
+        {width > 768 ? (
+          <>
+            <Hero /> <div className=" w-screen h-screen bg-transparent"></div>
+          </>
+        ) : (
+          <HeroMobile/>
+        )}
         <ScrollingCanvus1 />
         <Features />
         <Product />
