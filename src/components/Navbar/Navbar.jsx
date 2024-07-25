@@ -175,11 +175,11 @@ function Navbar({ scroll }) {
           </p>
         </div>
         <div className="h-screen w-full bg-transparent fixed z-[99999] text-white flex pointer-events-none">
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
         </div>
       </>
     );
