@@ -1,0 +1,140 @@
+
+.mainHero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:transparent;
+    gap:1rem;
+    perspective: 100px;
+    z-index: 9999999999;
+    position: relative;
+}
+.CameraSvg{
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    width: 200px;
+    object-fit: cover;
+}
+.NIK{
+    flex-shrink: 0;
+    font-size: 10rem;
+    text-shadow: 0px 15px 10px grey;
+    color:white;
+}
+.ON{
+    flex-shrink: 0;
+    font-size: 10rem;
+    text-shadow: 0px 15px 10px grey;
+    color:white;
+}
+.space{
+    flex-shrink: 0;
+    width: 10rem;
+    height: 10rem;
+}
+.zoomingdiv{
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 100%;
+    display: none;
+    align-items: center;
+    justify-content:center;
+    transform: translateX(40%) translateY(40%);
+}
+.innerdiv{
+    flex-shrink: 0;
+    width: 0%;
+    height: 0%;
+    border-radius: 100%;
+    background-color: rgb(103, 202, 16);
+    display: none;
+}
+.delay{
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top:0px;
+    display: none;
+    opacity:0;
+}
+.listStagger{
+    width: 7rem;
+    height: 90vh;
+   backdrop-filter: blur(100px);
+    position: absolute;
+    left:-100%;
+    border-radius:20px;
+}
+.InnerSwiper{
+    flex-shrink: 0;
+    background-color: rgb(178, 94, 94);
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: inherit;
+}
+.Slide{
+    flex-shrink: 0;
+    width: 100% !important;
+    height: 100% !important;
+    /* background-color: blue; */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.SwiperCamera{
+   aspect-ratio: 1/1;
+   width: 50%;
+   height: 80%;
+   position: relative;
+   z-index: 3;
+   rotate:7deg;
+   animation: floating 4s linear 0.5s infinite alternate-reverse backwards;
+   animation-play-state: paused;
+}
+.SwiperCamera:hover{
+    animation-play-state: running;
+}
+.model{
+    position: absolute;
+    z-index: 1;
+    font-size: 20rem;
+    user-select: none;
+}
+.timer-slider{
+    backdrop-filter: blur(100px);
+    background: transparent;
+   height: 60%;
+   border-radius: 50px !important;
+   gap:3rem !important;
+   border: 3px solid rgba(220, 20, 60, 0.52);
+}
+.timer{
+    background: linear-gradient(to bottom,rgb(255, 255, 255),blue,orange);
+   scale: 1.5;
+   color: white;
+}
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.scroll-down{
+    height:min-content;
+    background-color: skyblue;
+    border-radius: 50px;
+    bottom: 1rem;
+    right: 1rem;
+}

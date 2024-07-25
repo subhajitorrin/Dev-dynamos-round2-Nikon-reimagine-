@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Hero from "./components/Hero Section/Hero";
+// import Hero from "./components/Hero Section/Hero";
+import Hero from "./components/ZoomHero/Hero";
 import Myswipper from "./components/ExpendaingSwiper/Myswiper";
 import ScrollingCanvus1 from "./components/Scrolling-Canvus1/ScrollingCanvus1";
 import ScrollingCanvus2 from "./components/Scrolling-Canvus2/ScrollingCanvus2";
@@ -39,6 +40,7 @@ function App() {
         <Navbar scroll={scroll} />
         <TopNavbar scroll={scroll} />
         <Hero />
+        <div className=" w-screen h-screen bg-transparent"></div>
          {/* <ScrollingCanvus1 /> */}
         <Features />
         <Product />
