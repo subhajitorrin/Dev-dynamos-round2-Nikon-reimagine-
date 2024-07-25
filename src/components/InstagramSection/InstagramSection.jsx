@@ -42,15 +42,12 @@ function InstagramSection() {
       });
       t1.from(".instasectionanimationtext", {
         opacity: 0,
-        stagger:.1
+        stagger: 0.1,
       });
     }, []);
     return (
       <div className=" bg-transparent " ref={ref}>
-        <div
-          className="min-h-screen w-[100%]  pt-[4rem]"
-          ref={mainRef}
-        >
+        <div className="min-h-screen w-[100%]  pt-[4rem]" ref={mainRef}>
           <p className="text-[#ffd900] text-center  ">Nikon Film</p>
           <p className="mt-[40px] text-center text-[5vw] text-white font-bold leading-[80%] ">
             Get the best out of <br />
@@ -78,7 +75,9 @@ function InstagramSection() {
           <div className="flex justify-center">
             <p className="text-[3vw] text-white font-bold w-[90vw] ">
               {text.map((item, index) => {
-                return <span className="instasectionanimationtext">{item} </span>;
+                return (
+                  <span className="instasectionanimationtext">{item} </span>
+                );
               })}
             </p>
           </div>
@@ -123,7 +122,7 @@ function InstagramSection() {
               <video className="InstaVideo" autoPlay muted>
                 <source
                   className="VideoSource"
-                  src="src\assets\instavideo.mp4"
+                  src="https://res.cloudinary.com/difxhccup/video/upload/v1721891478/instavideo_qij9rp.webm"
                   type="video/mp4"
                 />
               </video>

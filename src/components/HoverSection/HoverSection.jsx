@@ -1,9 +1,20 @@
 import React, { useEffect, useState, useRef } from "react";
-import hover1 from "../../assets/hover1.jpg";
-import hover2 from "../../assets/hover2.jpg";
-import hover3 from "../../assets/hover3.jpg";
-import hover4 from "../../assets/hover4.jpg";
-import hover5 from "../../assets/hover5.jpg";
+// import hover1 from "../../assets/hover1.jpg";
+// import hover2 from "../../assets/hover2.jpg";
+// import hover3 from "../../assets/hover3.jpg";
+// import hover4 from "../../assets/hover4.jpg";
+// import hover5 from "../../assets/hover5.jpg";
+
+const hover1 =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721889135/hover1_mrcwuk.webp";
+const hover2 =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721889134/hover2_fjjvo2.webp";
+const hover3 =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721889133/hover3_i1e7yn.webp";
+const hover4 =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721889133/hover4_vbvloy.webp";
+const hover5 =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721889132/hover5_tqevvx.webp";
 
 const list = [
   ["CAMERA", "Z SERIES", "CAMERA INNOVATION"],
@@ -80,10 +91,10 @@ function HoverSection() {
           )}
         </div>
         <div className="flex items-center justify-center h-screen">
-          <div className="flex flex-col justify-between w-full text-white px-[5rem]">
+          <div className="flex flex-col justify-between w-full text-white px-[5rem] gap-[2rem] ">
             {list.map((item, idx) => (
               <div
-                className=" flex justify-between items-center pb-[1rem] mouseHoverAnimationOrrinContainer"
+                className="transition-all duration-200 ease-linear flex justify-between items-center pb-[1rem] mouseHoverAnimationOrrinContainer border-b-[2px] border-transparent hover:border-[#ffffff5f]"
                 key={idx}
                 onMouseEnter={() => handleMouseEnter(idx)}
                 onMouseLeave={handleMouseLeave}

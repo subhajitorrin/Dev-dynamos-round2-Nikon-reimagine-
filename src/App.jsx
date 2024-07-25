@@ -39,17 +39,17 @@ function App() {
         <Navbar scroll={scroll} />
         <TopNavbar scroll={scroll} />
         <Hero />
-         <ScrollingCanvus1 />
+         {/* <ScrollingCanvus1 /> */}
         <Features />
         <Product />
-        <ScrollingCanvus2 />
-        <Accessory />
+        {/* <ScrollingCanvus2 /> */}
+        {/* <Accessory /> */}
         <HoverSection />
         <Myswipper />
         <InstagramSection />
         <LowerInstagram /> 
         {/* <ScrollingCanvus3 /> */}
-        <Footer />
+        {/* <Footer />  */}
         
       </div>
     </>
