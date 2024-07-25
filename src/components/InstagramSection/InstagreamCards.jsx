@@ -174,7 +174,7 @@ function InstagreamCards({ src }) {
                 className={`absolute h-[500px] w-[300px]  bg-[red] z-[100] left-[50px]`}
               >
                 <img
-                  src={src}
+                  src={src[0]}
                   alt=""
                   width={"100%"}
                   height={"100%"}
@@ -186,7 +186,7 @@ function InstagreamCards({ src }) {
                 className={`absolute h-[500px] w-[300px] top-[-30px] rotate-[3deg] left-[70px] bg-[blue] z-[99]`}
               >
                 <img
-                  src={src}
+                  src={src[1]}
                   alt=""
                   width={"100%"}
                   height={"100%"}
@@ -198,7 +198,7 @@ function InstagreamCards({ src }) {
                 className={`absolute h-[500px] w-[300px] top-[40px]  rotate-[-3deg] left-[10px] bg-[yellow] z-[98]`}
               >
                 <img
-                  src={src}
+                  src={src[2]}
                   alt=""
                   width={"100%"}
                   height={"100%"}

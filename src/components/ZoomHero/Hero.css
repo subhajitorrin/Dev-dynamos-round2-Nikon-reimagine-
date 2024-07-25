@@ -116,9 +116,13 @@
    border: 3px solid rgba(220, 20, 60, 0.52);
 }
 .timer{
-    background: linear-gradient(to bottom,rgb(255, 255, 255),blue,orange);
-   scale: 1.5;
+   scale: 1.1;
    color: white;
+   transition: all 0.3s ease;
+}
+.timer:hover{
+    background:radial-gradient(blue,skyblue);
+    scale: 1.2;
 }
 @keyframes floating {
     0% {

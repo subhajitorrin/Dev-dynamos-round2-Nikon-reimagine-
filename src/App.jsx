@@ -35,13 +35,12 @@ function App() {
   return (
     <>
       <div className="bg-[#010413]">
-      
         <StarsCanvas />
         <Navbar scroll={scroll} />
         <TopNavbar scroll={scroll} />
         <Hero />
         <div className=" w-screen h-screen bg-transparent"></div>
-         {/* <ScrollingCanvus1 /> */}
+        <ScrollingCanvus1 />
         <Features />
         <Product />
         {/* <ScrollingCanvus2 /> */}
@@ -49,10 +48,9 @@ function App() {
         <HoverSection />
         <Myswipper />
         <InstagramSection />
-        <LowerInstagram /> 
+        <LowerInstagram />
         {/* <ScrollingCanvus3 /> */}
-        <Footer /> 
-        
+        <Footer />
       </div>
     </>
   );
