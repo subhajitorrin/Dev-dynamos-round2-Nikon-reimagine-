@@ -76,21 +76,21 @@ function Navbar({ scroll }) {
         <div className="navinner h-screen w-full bg-transparent fixed z-[999999] pointer-events-none text-white opacity-0 flex flex-col justify-evenly">
           <div className="flex justify-between">
             <div className="">
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
-                PRODUCTS
+              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa ">
+                Products
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
+              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
                 Learn & Explore
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
+              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
                 Nikon School
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center">
+              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
                 Where to buy
               </div>
             </div>
             <div className="">
-              <p className="w-[400px] relative top-[30%] right-[30%]">
+              <p className="w-[400px] relative top-[30%] right-[30%] text-[18px] select-none">
                 Discover the world of Nikon, where cutting-edge technology meets
                 unparalleled craftsmanship. From professional DSLRs and
                 mirrorless cameras to versatile lenses and accessories, Nikon
@@ -111,7 +111,7 @@ function Navbar({ scroll }) {
               />
             </div>
           </div>
-          <div className="flex justify-between px-[3rem] absolute w-full bottom-[3%]">
+          <div className="flex justify-between px-[3rem] absolute w-full bottom-[3%] select-none">
             <div className="">
               <p>Nikon Imaging | India | Asia Pacific</p>
             </div>
