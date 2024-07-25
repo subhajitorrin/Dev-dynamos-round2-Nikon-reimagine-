@@ -42,7 +42,7 @@ const Product = () => {
         start: "5% 0%",
         end: "20% 5%",
         scrub: 1,
-        markers: true,
+        // markers: true,
         scroller: "body",
         pin: true,
       },
@@ -70,7 +70,7 @@ const Product = () => {
     return (
       <div className=" CategoryProduct w-full bg-transparent relative md:p-[2rem] md:mt-[4rem] p-[1rem] text-white">
         <div className="header-product w-full flex flex-col  ">
-          <h1 className="lg:text-[10rem]  text-center gradiant-feature alfa">
+          <h1 className="lg:text-[10rem]  text-center gradiant-feature alfa pt-[60px]">
             CATEGORY
           </h1>
           <button className="ml-[2rem] button">
@@ -113,13 +113,11 @@ const Product = () => {
     );
   } else {
     return (
-      <div className="overflow-x-auto relative ">
+      <div className="overflow-x-auto relative  h-screen flex items-center scrollhide">
         <div className="flex p-[4rem]  w-[1740px] gap-[2rem]">
-          {
-            imglist.map((item,index)=>{
-              return <Card src={item} name={product_info[5].name} />
-            })
-          }
+          {imglist.map((item, index) => {
+            return <Card src={item} name={product_info[5].name} />;
+          })}
         </div>
       </div>
     );

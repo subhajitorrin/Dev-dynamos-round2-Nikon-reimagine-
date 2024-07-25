@@ -67,7 +67,10 @@ function Navbar({ scroll }) {
         ) : (
           <div
             onClick={() => setIsNavActive(true)}
-            style={{ opacity: scroll > 200 ? "1" : "0" }}
+            style={{
+              opacity: scroll > 200 ? "1" : "0",
+              pointerEvents: scroll > 200 ? "auto" : "none",
+            }}
             className="transition-all duration-300 ease-linear fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
           >
             <CiMenuFries />
@@ -76,16 +79,16 @@ function Navbar({ scroll }) {
         <div className="navinner h-screen w-full bg-transparent fixed z-[999999] pointer-events-none text-white opacity-0 flex flex-col justify-evenly">
           <div className="flex justify-between">
             <div className="">
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa ">
+              <div className="w-[300px] h-[70px] select-none text-[35px] flex ml-[2rem] font-[900] ">
                 Products
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
+              <div className="w-[300px] h-[70px] select-none text-[35px] flex ml-[2rem] font-[900]">
                 Learn & Explore
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
+              <div className="w-[300px] h-[70px] select-none text-[35px] flex ml-[2rem] font-[900]">
                 Nikon School
               </div>
-              <div className="w-[300px] h-[70px] select-none text-[30px] flex items-center justify-center alfa">
+              <div className="w-[300px] h-[70px] select-none text-[35px] flex ml-[2rem] font-[900]">
                 Where to buy
               </div>
             </div>
@@ -172,11 +175,11 @@ function Navbar({ scroll }) {
           </p>
         </div>
         <div className="h-screen w-full bg-transparent fixed z-[99999] text-white flex pointer-events-none">
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
-          <div className="h-screen w-[20%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
+          <div className="h-screen w-[25%] bg-black relative top-[-100%] navslides"></div>
         </div>
       </>
     );

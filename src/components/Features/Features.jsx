@@ -5,12 +5,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nikon3d from './Nikon3d';
 
-import Fimg from '../../assets/featureImg1.png';
-import Trus1 from '../../assets/trusted1.png';
-import Trus2 from '../../assets/trusted2.png';
-import Trus3 from '../../assets/trusted3.png';
-import Trus4 from '../../assets/trusted4.png';
-import Trus5 from '../../assets/trusted5.png';
+const Trus1 = "https://res.cloudinary.com/difxhccup/image/upload/v1721924302/trusted1_wdlhk2.webp"
+
+const Trus3 = "https://res.cloudinary.com/difxhccup/image/upload/v1721924303/trusted3_lxdeym.webp"
+const Trus4 = "https://res.cloudinary.com/difxhccup/image/upload/v1721924303/trusted4_peb9no.webp"
+const Trus5 = "https://res.cloudinary.com/difxhccup/image/upload/v1721924304/trusted5_m5fpkq.webp"
 import { Navigation, Pagination, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/bundle";
@@ -63,7 +62,7 @@ const Features = () => {
                 <p className='md:w-[70%] text-center opacity-[1] text-[10px] md:text-[15px]'>Elievate your photography game with our range of professionals grade cameras and accessories capture every moment with our high-quality cameras and lenses</p>
 
                 <div className='feature mt-[2rem] relative text-[4rem] lg:text-[10rem] md:text-[6rem] w-full flex items-center justify-center lg:ml-[1.5rem]'>
-                    <h1 className='gradiant-feature font-[550]'>FEATURE</h1>
+                    <h1 className='gradiant-feature font-[550] pb-[60px]'>FEATURE</h1>
                 </div>
             </div>
             <div className='camera-features-container w-full relative md:h-[60vh] h-full'>
@@ -96,7 +95,7 @@ const Features = () => {
                 </div>
             </div>
             <div className='trusted_by hidden md:flex md:flex-col items-center'>
-                <h1 className='text-center text-4xl pb-[1rem] font-bold '>TRUSTED BY</h1>
+                <h1 className='text-center text-4xl pb-[1rem] font-bold pt-[80px]'>TRUSTED BY</h1>
                 <div className='ParentInfinite'>
                     <div className='InfiniteTrust flex items-center justify-around w-full '>
                         <img src={Trus1} alt="" width={"150px"} height={"150px"}/>
