@@ -44,7 +44,7 @@ const Card = ({ src, name, price, secPrice, rating }) => {
             >
               <h1 className="font-[800]">{name}</h1>
               <p>$499.00</p>
-              <div className="w-full h-[60%] flex flex-col gap-[5px] items-center justify-start mt-[1rem] pb-[20px]">
+              <div className="w-full h-[60%] flex flex-col gap-[5px] items-center justify-start mt-[1rem] pb-[40px]">
                 <button className="btn">Add To Cart</button>
                 <button
                   className="btn "
