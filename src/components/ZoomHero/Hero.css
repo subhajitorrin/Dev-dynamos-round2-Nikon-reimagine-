@@ -40,7 +40,7 @@
     background-color: #ffffff;
     position: absolute;
     border-radius: 100%;
-    /* display: none; */
+    display: none;
     align-items: center;
     justify-content:center;
     transform: translateX(45%) translateY(45%);
