@@ -63,7 +63,7 @@ function InstagramSection() {
               <video className="InstaVideo" autoPlay muted>
                 <source
                   className="VideoSource"
-                  src="src\assets\instavideo.mp4"
+                  src="https://res.cloudinary.com/difxhccup/video/upload/v1721929423/instavideo_oxilqh.webm"
                   type="video/mp4"
                 />
               </video>

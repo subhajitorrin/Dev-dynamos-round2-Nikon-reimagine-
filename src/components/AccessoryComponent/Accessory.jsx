@@ -420,7 +420,7 @@ function Accessory() {
           </div>
           <div className="CameraImg" id="CameraImg">
             <div className="lensportion">
-              <img src="src\assets\FinalCameraImagelens.png" alt="" />
+              <img src="https://res.cloudinary.com/difxhccup/image/upload/v1721929115/FinalCameraImagelens_dxbysd.png" alt="" />
               <div className="box SpeedLight">
                 <div className="MoreAboutProduct">
                   <LuPlus className="MoreAboutProductIcon" />
@@ -433,7 +433,7 @@ function Accessory() {
               </div>
             </div>
             <div className="CameraBodyPortion">
-              <img src="src\assets\FinalCameraImagebody.png" alt="" />
+              <img src="https://res.cloudinary.com/difxhccup/image/upload/v1721929115/FinalCameraImagebody_t0r1ui.png" alt="" />
               <div className="box Batteries">
                 <div className="MoreAboutProduct">
                   <LuPlus className="MoreAboutProductIcon" />
