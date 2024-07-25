@@ -6,7 +6,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(useGSAP);
 
-function InstagreamCards({ src }) {
+function InstagreamCards({ src, texting }) {
+  const [textorrin, settextorrin] = useState(null);
+  useEffect(() => {
+    settextorrin(texting);
+  }, []);
   const text =
     "A breaker of forms, Coco Capitán's craft is moored in chaos and unexpected beauty.".split(
       " "
@@ -25,6 +29,7 @@ function InstagreamCards({ src }) {
   const mainRef = useRef(null);
   const boxRefs = useRef([]);
   const splittext = useRef([]);
+  const textContainer = useRef(null);
 
   if (width > 768) {
     useEffect(() => {
@@ -42,20 +47,23 @@ function InstagreamCards({ src }) {
         });
       });
 
-      splittext.current.forEach((item, index) => {
-        gsap.from(item, {
-          opacity: 0,
-          top: -20,
-          stagger: 0.1,
-          scrollTrigger: {
-            trigger: item,
-            start: "top 70%",
-            end: "bottom 50%",
-            scrub: true,
-            // markers: true,
-          },
+      if (splittext.current) {
+        splittext.current.forEach((item, index) => {
+          gsap.from(item, {
+            opacity: 0,
+            top: -20,
+            stagger: 0.1,
+            scrollTrigger: {
+              trigger: item,
+              start: "top 70%",
+              end: "bottom 50%",
+              scrub: true,
+              // markers: true,
+            },
+          });
         });
-      });
+      }
+
     }, []);
 
     return (
@@ -108,25 +116,30 @@ function InstagreamCards({ src }) {
                 className="text-[blue] text-[1vw] splitedtextorrin"
                 ref={(el) => (splittext.current[0] = el)}
               >
-                In Focus
+                {textorrin && textorrin.one}
               </p>
-              <p className="font-bold text-[1.5vw] leading-[90%] w-[600px] text-center">
-                {text.map((item, index) => {
-                  return (
-                    <div
-                      className="inline-block splitedtextorrin"
-                      ref={(el) => (splittext.current[index + 2] = el)}
-                    >
-                      {item}&nbsp;
-                    </div>
-                  );
-                })}
+              <p
+                className="font-bold text-[1.5vw] leading-[90%] w-[600px] text-center "
+                ref={(el) => (splittext.current[2] = el)}
+              >
+                {textorrin &&
+                  textorrin.two.map((item, index) => {
+                    console.log(item);
+                    return (
+                      <div
+                        className="inline-block paci"
+                        // ref={(el) => (splittext.current[index + 2] = el)}
+                      >
+                        {item}&nbsp;
+                      </div>
+                    );
+                  })}
               </p>
               <p
                 className="text-[1vw] splitedtextorrin"
                 ref={(el) => (splittext.current[1] = el)}
               >
-                See her I-2 story
+                {textorrin && textorrin.three}
               </p>
             </div>
           </div>
@@ -159,12 +172,22 @@ function InstagreamCards({ src }) {
         >
           <div className="flex items-center justify-center w-[100%]">
             <div className="text-white text-center flex flex-col gap-[1.5rem]">
-              <p className="text-[blue] text-[1vw]">In Focus</p>
+              <p className="text-[blue] text-[3vw]">{textorrin && textorrin.one}</p>
               <p className="font-bold text-[4vw] leading-[90%]">
-                A breaker of forms, Coco Capitán’s <br />
-                craft is moored in <br /> chaos and unexpected beauty.
+              {textorrin &&
+                  textorrin.two.map((item, index) => {
+                    console.log(item);
+                    return (
+                      <div
+                        className="inline-block paci"
+                        // ref={(el) => (splittext.current[index + 2] = el)}
+                      >
+                        {item}&nbsp;
+                      </div>
+                    );
+                  })}
               </p>
-              <p className="text-[3vw]">See her I-2 story</p>
+              <p className="text-[3vw]">{textorrin && textorrin.three}</p>
             </div>
           </div>
           <div className="w-[100%] flex items-center justify-center ">
