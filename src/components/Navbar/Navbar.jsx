@@ -2,11 +2,14 @@ import gsap from "gsap";
 import React, { useEffect, useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross1 } from "react-icons/rx";
-import nikonimg from "../../assets/navcamera1.png";
+// import nikonimg from "../../assets/navcamera1.png";
 import { FiInstagram } from "react-icons/fi";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { RiTwitterXLine } from "react-icons/ri";
+
+const nikonimg =
+  "https://res.cloudinary.com/difxhccup/image/upload/v1721900190/navcamera1_wpirdv.webp";
 
 function Navbar({ scroll }) {
   const [isNavActive, setIsNavActive] = useState(false);
@@ -57,7 +60,6 @@ function Navbar({ scroll }) {
         {isNavActive ? (
           <div
             onClick={() => setIsNavActive(false)}
-            
             className="fixed top-[20px] right-[20px] z-[99999999] text-white cursor-pointer text-[30px] navicon"
           >
             <RxCross1 />
